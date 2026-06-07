@@ -1,0 +1,2958 @@
+Human: Rotate joint 2 by 30 degrees, joint 7 by 45 degrees, and joint 3 by π/4 radians
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2, 7], "angle": [0.52, 0.79]}}, {"function": "move_joint", "kwargs": {"joint": [3], "angle": [0.79]}}]
+
+Human: Fetch robot joint details
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate joint 2 for 30 degrees, joint 7 for 45 degrees, and joint 3 for π/4
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2, 7, 3], "angle": [0.52, 0.79, 0.01]}}]
+
+Human: Rotate the robot's base by 45 degrees and move the TCP along the x-axis for 50 millimeters
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [0.79]}}, {"function": "move_tcp", "kwargs": {"x": 50.0}}]
+
+Human: Move robot TCP to (0.7, 0.4, 0.8) meters and rotate joint 2 by 30 degrees
+Robot: [{"function": "move_tcp", "kwargs": {"x": 700.0, "y": 400.0, "z": 800.0}}, {"function": "move_joint", "kwargs": {"joint": [1], "angle": [0.52]}}]
+
+Human: Rotate the robot base by 45 degrees and move the TCP along the x-axis by 50 millimeters
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [0.79]}}, {"function": "move_tcp", "kwargs": {"x": 50.0}}]
+
+Human: Adjust TCP to position (0.4, 0.6, -0.2) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": 400.0, "y": 600.0, "z": -200.0}}]
+
+Human: Move robot along x, y, and z directions by 1000 mm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 1000.0, "y": 1000.0, "z": 1000.0}}]
+
+Human: Move robot TCP to position (0.5, 0.3, 0.7) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": 300.0, "z": 700.0}}]
+
+Human: Rotate joint 5 for pi/4 and joint 7 for pi/3
+Robot: [{"function": "move_joint", "kwargs": {"joint": [4, 6], "angle": [0.79, 1.05]}}]
+
+Human: Rotate joint 5 by -30 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [4], "angle": [-0.52]}}]
+
+Human: Rotate the robot's base for -60 degrees and move TCP along the z-axis for 200 mm
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [-1.05]}}, {"function": "move_tcp", "kwargs": {"z": 200.0}}]
+
+Human: Move TCP to coordinates (0.5, 0.3, 0.7) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": 300.0, "z": 700.0}}]
+
+Human: Relocate the end effector to (150, 250, 350) millimeters from its current location
+Robot: [{"function": "move_tcp", "kwargs": {"x": 150.0, "y": 250.0, "z": 350.0}}]
+
+Human: Move the robotic arm to position (100, -50, 200) cm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 10000.0, "y": -5000.0, "z": 20000.0}}]
+
+Human: Retrieve robot joint statuses
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Give me robot joints info
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Obtain the values of all arm joints.
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate joint 4 for 60 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3], "angle": [1.05]}}]
+
+Human: Move robot tcp along x and y for 1000mm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 1000.0, "y": 1000.0}}]
+
+Human: Move the robot's end effector along the y-axis for a distance of 500 millimeters.
+Robot: [{"function": "move_tcp", "kwargs": {"y": 500.0}}]
+
+Human: Retrieve the status of robot joints.
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move TCP to (0.3, -0.7, 0.6) in meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 300.0, "y": -700.0, "z": 600.0}}]
+
+Human: Rotate joint 1 by 60 degrees and joint 4 by -45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0, 3], "angle": [1.05, -0.79]}}]
+
+Human: Move the robot's end effector to (0.6, 0.4, 0.8) in meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 600.0, "y": 400.0, "z": 800.0}}]
+
+Human: Rotate joint 2 by 45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [0.79]}}]
+
+Human: Move the robot TCP to (0.7, 0.5, 0.9) meters.
+Robot: [{"function": "move_tcp", "kwargs": {"x": 700.0, "y": 500.0, "z": 900.0}}]
+
+Human: Inquire about the current robot joints status
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move TCP along the x and y axes for 1000 millimeters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 1000.0, "y": 1000.0}}]
+
+Human: Transmit robot TCP to (0.7, 0.4, 0.5) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": 700.0, "y": 400.0, "z": 500.0}}]
+
+Human: Increase the angle of joint 4 by 30 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3], "angle": [0.52]}}]
+
+Human: Retrieve data on the current status of the robot's end-effector
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate joint 6 by -30 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5], "angle": [-0.52]}}]
+
+Human: Inquire about the current positions of all robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Retrieve joint positions of the robotic arm
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move robot TCP to coordinates (0.5, 0.3, 0.7) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": 300.0, "z": 700.0}}]
+
+Human: Check current status of robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move robot sixth joint for -30 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5], "angle": [-0.52]}}]
+
+Human: Give me information about the robot's current joint values
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Command the robot to change TCP position to (0.1, 0.8, -0.5) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": 100.0, "y": 800.0, "z": -500.0}}]
+
+Human: Fetch the current state of the robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move robot to position 0.5 meters along the x-axis and 0.3 meters along the y-axis
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": 300.0}}]
+
+Human: Retrieve robot joint values
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Display current position of robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Provide me with the current status of robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate joint 2 by 45 degrees and move TCP along z-axis for 30mm
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [0.79]}}, {"function": "move_tcp", "kwargs": {"z": 30.0}}]
+
+Human: I need to move the robot TCP along the z-axis for a distance of 300 millimeters.
+Robot: [{"function": "move_tcp", "kwargs": {"z": 300.0}}]
+
+Human: Rotate robot sixth joint by -30 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5], "angle": [-0.52]}}]
+
+Human: Retrieve the current configuration of all robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Request joint status for diagnostics
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate robot base for 45 and move TCP along x axis for 50 milimeters.
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [0.79]}}, {"function": "move_tcp", "kwargs": {"x": 50.0}}]
+
+Human: Retrieve information about the robot's joint positions
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Perform a joint rotation of joint 4 by -90 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3], "angle": [-1.57]}}]
+
+Human: Move TCP to (300, -100, 500) mm and rotate joint 6 for -30 degrees
+Robot: [{"function": "move_tcp", "kwargs": {"x": 300.0, "y": -100.0, "z": 500.0}}, {"function": "move_joint", "kwargs": {"joint": [5], "angle": [-0.52]}}]
+
+Human: Reposition joint 1 to -45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [-0.79]}}]
+
+Human: Turn joint 5 by pi/2 radians.
+Robot: [{"function": "move_joint", "kwargs": {"joint": [4], "angle": [1.57]}}]
+
+Human: Move robot TCP to (0.6, 0.4, 0.7) meters and rotate joint 3 by -60 degrees
+Robot: [{"function": "move_tcp", "kwargs": {"x": 600.0, "y": 400.0, "z": 700.0}}, {"function": "move_joint", "kwargs": {"joint": [2], "angle": [-1.05]}}]
+
+Human: Rotate robot joint 4 by -90 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3], "angle": [-1.57]}}]
+
+Human: Shift robot TCP to (0.8, -0.2, 0.5) meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 800.0, "y": -200.0, "z": 500.0}}]
+
+Human: Move TCP to (0.5, 0.5, 0.5) m and rotate joint 2 by -30 degrees
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": 500.0, "z": 500.0}}, {"function": "move_joint", "kwargs": {"joint": [1], "angle": [-0.52]}}]
+
+Human: Provide information on the robot's joint status
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Request the status of all robot joints and end effector
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate joint 5 by -60 degrees and joint 7 by 45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [4, 6], "angle": [-1.05, 0.79]}}]
+
+Human: Move TCP to (0.6, 0.4, 0.8) in meters.
+Robot: [{"function": "move_tcp", "kwargs": {"x": 600.0, "y": 400.0, "z": 800.0}}]
+
+Human: Shift TCP to (0.1, 0.3, 0.6) in meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 100.0, "y": 300.0, "z": 600.0}}]
+
+Human: Get current robot joint values
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Translate the robot's end effector to point (300, 150, 200) mm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 300.0, "y": 150.0, "z": 200.0}}]
+
+Human: Move robot TCP to coordinates (0.5, 0.3, 0.7) in meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": 300.0, "z": 700.0}}]
+
+Human: Move TCP along y-axis for 500mm
+Robot: [{"function": "move_tcp", "kwargs": {"y": 500.0}}]
+
+Human: Move robot TCP to coordinates (0.5, 0.3, 0.7) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": 300.0, "z": 700.0}}]
+
+Human: Adjust joint 4 to -90 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3], "angle": [-1.57]}}]
+
+Human: Move robot TCP along the x-axis for 50 millimeters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 50.0}}]
+
+Human: Rotate joint 2 by 30 degrees, joint 7 by 45 degrees, and joint 3 by pi/4
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2, 7, 3], "angle": [0.52, 0.79, 0.01]}}]
+
+Human: Please move the robot TCP to (0.1, 0.3, 0.5) meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 100.0, "y": 300.0, "z": 500.0}}]
+
+Human: Show me the current position and orientation of the robot's end effector
+Robot: [{"function": "get_end_effector_pose", "kwargs": {}}]
+
+Human: Request the current status of robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate the third joint by -30 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [-0.52]}}]
+
+Human: Move robot TCP along z-axis for 100 millimeters
+Robot: [{"function": "move_tcp", "kwargs": {"z": 100.0}}]
+
+Human: Move TCP to (0.1, 0.6, 0.5) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": 100.0, "y": 600.0, "z": 500.0}}]
+
+Human: Modify angle of joint 4 to 60 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3], "angle": [1.05]}}]
+
+Human: Move robot TCP to coordinates (0.5, 0.3, 0.7) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": 300.0, "z": 700.0}}]
+
+Human: Move TCP to (0.7, 0.9, 0.5) m with mm as unit
+Robot: [{"function": "move_tcp", "kwargs": {"x": 700.0, "y": 900.0, "z": 500.0}}]
+
+Human: Move robot TCP along the x-axis by 50 millimeters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 50.0}}]
+
+Human: Move joint 1 by -45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [1], "angle": [-0.79]}}]
+
+Human: Get the current status of robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Retrieve the current status of all robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Provide me with the current joint values
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Translate the robot's TCP to (1.2, -0.3, 0.9) meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 1200.0, "y": -300.0, "z": 900.0}}]
+
+Human: Rotate joint 4 for -30 degrees and joint 6 for pi/3 radians
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3, 5], "angle": [-0.52, 0.02]}}]
+
+Human: Navigate the TCP to point (0.5, -0.2, 0.8) m away from the origin
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": -200.0, "z": 800.0}}]
+
+Human: Retrieve current status of robot joints.
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate joint 4 for 60 degrees and joint 2 for -45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3], "angle": [1.05]}}, {"function": "move_joint", "kwargs": {"joint": [1], "angle": [-0.79]}}]
+
+Human: Fetch the current status of the robot's joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Direct the robot to go to new position (1.2, -0.7, 0.9) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": 1200.0, "y": -700.0, "z": 900.0}}]
+
+Human: Move joint 3 by 90 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [1.57]}}]
+
+Human: Get the current status of robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate robot joint 4 by 90 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3], "angle": [1.57]}}]
+
+Human: Rotate joint 5 by -45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [4], "angle": [-0.79]}}]
+
+Human: Shift the robot TCP along the y-axis for 200 millimeters
+Robot: [{"function": "move_tcp", "kwargs": {"y": 200.0}}]
+
+Human: Rotate joint 2 by 30 degrees, joint 7 by 45 degrees, and joint 3 by π/4
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2, 7, 3], "angle": [0.52, 0.79, 0.01]}}]
+
+Human: Provide me with the current joint angles of the robot.
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate joint 5 for 60 degrees and joint 6 for pi/3 radians
+Robot: [{"function": "move_joint", "kwargs": {"joint": [4, 5], "angle": [1.05, 0.02]}}]
+
+Human: Rotate robot's sixth joint by -30 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5], "angle": [-0.52]}}]
+
+Human: Retrieve the current configuration of all robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move robot TCP to position (0.5, 0.3, 0.7) meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": 300.0, "z": 700.0}}]
+
+Human: Increase the angle of the third joint by pi/3 radians.
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [1.05]}}]
+
+Human: Instruct the robot to adjust its TCP to (0.4, -0.6, 1.5) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": 400.0, "y": -600.0, "z": 1500.0}}]
+
+Human: Move robot TCP to coordinates (0.5, 0.3, 0.7) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": 300.0, "z": 700.0}}]
+
+Human: Get current robot TCP position
+Robot: [{"function": "get_tcp_position", "kwargs": {}}]
+
+Human: What are the current values of robot joints?
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate robot joint 5 by 30 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [4], "angle": [0.52]}}]
+
+Human: Give me information on each robot joint
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move robot TCP to (0.5, 0.3, 0.7) meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": 300.0, "z": 700.0}}]
+
+Human: Rotate the robot base by 90 degrees and move TCP along x axis for 50 millimeters
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [1.57]}}, {"function": "move_tcp", "kwargs": {"x": 50.0}}]
+
+Human: Rotate joint 5 by pi/2 radians
+Robot: [{"function": "move_joint", "kwargs": {"joint": [4], "angle": [1.57]}}]
+
+Human: Retrieve the status of all robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Perform a TCP movement of 150 mm in the x-direction
+Robot: [{"function": "move_tcp", "kwargs": {"x": 150.0}}]
+
+Human: Turn the third joint 45 degrees in a clockwise direction
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [0.79]}}]
+
+Human: Provide me with status of robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Fetch the status of all robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move robot TCP to coordinates (0.5, 0.3, 0.7) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": 300.0, "z": 700.0}}]
+
+Human: Obtain current joint values
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate robot joint 2 by 45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [0.79]}}]
+
+Human: Obtain the status of the robot's third joint
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Get the current position of all robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Retrieve the status of all robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move the robot TCP along the x and y axes by 1000 millimeters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 1000.0, "y": 1000.0}}]
+
+Human: Rotate joint 2 by 30 degrees, joint 7 by 45 degrees and joint 3 by pi/4
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2, 7, 3], "angle": [0.52, 0.79, 0.01]}}]
+
+Human: Shift the robot's end effector to (0.3, 0.6, -0.9) meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 300.0, "y": 600.0, "z": -900.0}}]
+
+Human: Move TCP along x and y for 500mm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": 500.0}}]
+
+Human: Rotate joint 1 for pi/4 radians
+Robot: [{"function": "move_joint", "kwargs": {"joint": [1], "angle": [0.79]}}]
+
+Human: I need to shift the robot TCP along the y-axis by 500mm
+Robot: [{"function": "move_tcp", "kwargs": {"y": 500.0}}]
+
+Human: Modify the position of robot TCP to (0.7, 0.5, 0.9) in meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 700.0, "y": 500.0, "z": 900.0}}]
+
+Human: Rotate joint 6 for 120 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5], "angle": [2.09]}}]
+
+Human: Retrieve the current joint values of the robot
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Retrieve robot joint values
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Request the current joint values of the robot
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate robot base for 45 and move TCP along x axis for 50 milimeters.
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [0.79]}}, {"function": "move_tcp", "kwargs": {"x": 50.0}}]
+
+Human: How do I program the robot to move its TCP in a circular motion?
+Robot: [{"function": "move_tcp", "kwargs": {}}]
+
+Human: Move TCP to coordinates (0.7, 0, 1) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": 700.0, "y": 0.0, "z": 1000.0}}]
+
+Human: Provide me with the status of all robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Fetch robot joints information
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Provide me with robot joints information
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Change the orientation of joint 5 to -1 radian
+Robot: [{"function": "move_joint", "kwargs": {"joint": [4], "angle": [-1.0]}}]
+
+Human: Rotate the fifth joint by 60 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [4], "angle": [1.05]}}]
+
+Human: Request the current joint positions of the robot
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move robot TCP to coordinates (0.5, 0.3, 0.7) meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": 300.0, "z": 700.0}}]
+
+Human: Turn joint 6 by 45 degrees and joint 3 by -30 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5, 2], "angle": [0.79, -0.52]}}]
+
+Human: Give me an update on the robot's joint statuses
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move robot TCP along the y-axis for 300 millimeters
+Robot: [{"function": "move_tcp", "kwargs": {"y": 300.0}}]
+
+Human: Obtain information about robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Get the current status of robot joints.
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate joint 3 by 90 degrees and joint 5 by -45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [1.57]}}, {"function": "move_joint", "kwargs": {"joint": [4], "angle": [-0.79]}}]
+
+Human: Move the robot forward by 100 millimeters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 100.0}}]
+
+Human: Retrieve robot joint information
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Turn the fourth joint by 60 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3], "angle": [1.05]}}]
+
+Human: Move the robot TCP along the x and y axes for 1000mm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 1000.0, "y": 1000.0}}]
+
+Human: Rotate joint 5 for -π/4
+Robot: [{"function": "move_joint", "kwargs": {"joint": [4], "angle": [-0.79]}}]
+
+Human: Rotate joint 3 by pi/4
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [0.79]}}]
+
+Human: Rotate joint 1 by 90 degrees and joint 6 by -45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0, 5], "angle": [1.57, -0.79]}}]
+
+Human: Rotate joint 2 by 30 degrees, joint 7 by 45 degrees, and joint 3 by pi/4 radians
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2, 7, 3], "angle": [0.52, 0.79, 0.79]}}]
+
+Human: Execute a movement that involves rotating each joint of the robot by 90 degrees.
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0, 1, 2, 3, 4, 5, 6], "angle": [1.57, 1.57, 1.57, 1.57, 1.57, 1.57, 1.57]}}]
+
+Human: Move TCP to coordinates (0.7, -0.1, 0.6) meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 700.0, "y": -100.0, "z": 600.0}}]
+
+Human: Move TCP along the y-axis for 500mm
+Robot: [{"function": "move_tcp", "kwargs": {"y": 500.0}}]
+
+Human: I want you to rotate joint 2 for 30 and joint 7 for 45 degrees then joint 3 for pi/4
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2, 7], "angle": [0.52, 0.79]}}, {"function": "move_joint", "kwargs": {"joint": [3], "angle": [0.79]}}]
+
+Human: Move TCP to position (1500, -300, 700) mm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 1500.0, "y": -300.0, "z": 700.0}}]
+
+Human: Rotate robot base by 45 degrees and move TCP along x axis for 50 mm
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [0.79]}}, {"function": "move_tcp", "kwargs": {"x": 50.0}}]
+
+Human: I want you to rotate joint 2 for 30 and joint 7 for 45 degrees then joint 3 for pi/4
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2, 7], "angle": [0.52, 0.79]}}, {"function": "move_joint", "kwargs": {"joint": [3], "angle": [0.79]}}]
+
+Human: Move TCP to position (500, 300, 700) millimeters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": 300.0, "z": 700.0}}]
+
+Human: Move robot base for 45 degrees and then move TCP along the y-axis for 50 mm
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [0.79]}}, {"function": "move_tcp", "kwargs": {"y": 50.0}}]
+
+Human: Retrieve current robot joint values
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move TCP along z-axis for 2 meters
+Robot: [{"function": "move_tcp", "kwargs": {"z": 2000.0}}]
+
+Human: Rotate robot base for 45 and move TCP along x axis for 50 milimeters.
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [0.79]}}, {"function": "move_tcp", "kwargs": {"x": 50.0}}]
+
+Human: Move robot TCP to (300, 400, 500) mm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 300.0, "y": 400.0, "z": 500.0}}]
+
+Human: Rotate the robot base by 45 degrees and move the TCP along the z-axis for 100 millimeters
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [0.79]}}, {"function": "move_tcp", "kwargs": {"z": 100.0}}]
+
+Human: Rotate joint 4 by 90 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3], "angle": [1.57]}}]
+
+Human: Move TCP to coordinates (0.5, 0.3, 0.7) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": 300.0, "z": 700.0}}]
+
+Human: Retrieve the current position of the robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Shift the TCP to coordinates (0.6, 0.4, 0.9) meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 600.0, "y": 400.0, "z": 900.0}}]
+
+Human: Move the robot's end effector along the x-axis by 50 mm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 50.0}}]
+
+Human: Rotate the robot's 3rd joint by 60 degrees and the 5th joint by -30 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2, 4], "angle": [1.05, -0.52]}}]
+
+Human: Adjust joint 6 by 1.5 radians in the counterclockwise direction
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5], "angle": [1.5]}}]
+
+Human: Rotate robot joint 2 by 45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [0.79]}}]
+
+Human: Move the robot TCP to position (0.5, 0.3, 0.7) in meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": 300.0, "z": 700.0}}]
+
+Human: Move robot TCP 100 mm along x-axis
+Robot: [{"function": "move_tcp", "kwargs": {"x": 100.0}}]
+
+Human: Rotate joint 4 by -90 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3], "angle": [-1.57]}}]
+
+Human: Shift TCP in x-direction by 20 mm and in y-direction by -15 mm.
+Robot: [{"function": "move_tcp", "kwargs": {"x": 20.0, "y": -15.0}}]
+
+Human: Move the TCP to (500, 300, 700) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500000.0, "y": 300000.0, "z": 700000.0}}]
+
+Human: Rotate robot joint 2 by 45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [0.79]}}]
+
+Human: Acquire information about the current positions of all robot joints.
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Show me the current positions of robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate robot's sixth joint by -30 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5], "angle": [-0.52]}}]
+
+Human: Rotate three robot joints: joint 1 by 45 degrees, joint 4 by -45 degrees, and joint 6 by 90 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0, 3, 5], "angle": [0.79, -0.79, 1.57]}}]
+
+Human: Rotate joint 4 and joint 6 by 30 degrees each
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3, 5], "angle": [0.52, 0.52]}}]
+
+Human: Rotate seventh joint by -90 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [6], "angle": [-1.57]}}]
+
+Human: Obtain robot joint values
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Retrieve robot joint statuses
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate joint 3 by -90 degrees and joint 5 by 45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [-1.57]}}, {"function": "move_joint", "kwargs": {"joint": [4], "angle": [0.79]}}]
+
+Human: Rotate joint 4 for 60 degrees and joint 6 for -45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3, 5], "angle": [1.05, -0.79]}}]
+
+Human: Check current robot joints information
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move joint 3 to 90 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [1.57]}}]
+
+Human: Move the robot TCP in the x-direction by 1000mm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 1000.0}}]
+
+Human: Turn the second joint by 60 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [1], "angle": [1.05]}}]
+
+Human: Rotate the robot's third joint by 90 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [1.57]}}]
+
+Human: Move the robot TCP along the x-axis for 50 millimeters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 50.0}}]
+
+Human: Get the current status of robot joints.
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move robot TCP to position (100, 200, 300) mm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 100.0, "y": 200.0, "z": 300.0}}]
+
+Human: Rotate robot base by 45 degrees and move TCP along x-axis for 50 mm
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [0.79]}}, {"function": "move_tcp", "kwargs": {"x": 50.0}}]
+
+Human: Rotate joint 1 by pi/2 radians
+Robot: [{"function": "move_joint", "kwargs": {"joint": [1], "angle": [1.57]}}]
+
+Human: Retrieve the current angles of all robotic arm joints.
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate joint 5 for -90 degrees and joint 3 for 45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [4], "angle": [-1.57]}}, {"function": "move_joint", "kwargs": {"joint": [2], "angle": [0.79]}}]
+
+Human: Shift the robot's TCP along y-axis for 500 millimeters
+Robot: [{"function": "move_tcp", "kwargs": {"y": 500.0}}]
+
+Human: Rotate joint 1 for pi/3 radians then joint 3 for pi/4 radians
+Robot: [{"function": "move_joint", "kwargs": {"joint": [1], "angle": [1.05]}}, {"function": "move_joint", "kwargs": {"joint": [3], "angle": [0.79]}}]
+
+Human: Move TCP to (500, 300, 700) in millimeters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": 300.0, "z": 700.0}}]
+
+Human: Rotate the robot base for 60 degrees and move TCP along z axis for 70 millimeters
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [1.05]}}, {"function": "move_tcp", "kwargs": {"z": 70.0}}]
+
+Human: Rotate robot base by 45 degrees and move TCP along the x-axis for 50 millimeters
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [0.79]}}, {"function": "move_tcp", "kwargs": {"x": 50.0}}]
+
+Human: Adjust TCP position to (0.8, 0.6, 0.3) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": 800.0, "y": 600.0, "z": 300.0}}]
+
+Human: Move robot TCP along y-axis for 500 millimeters
+Robot: [{"function": "move_tcp", "kwargs": {"y": 500.0}}]
+
+Human: Provide me with the current robot joint values
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move robot sixth joint for -30 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5], "angle": [-0.52]}}]
+
+Human: Move TCP along x-axis for 1000mm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 1000.0}}]
+
+Human: Obtain current robot joint information
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move TCP to coordinates (0.7, 0.3, 0.9) cm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 70.0, "y": 30.0, "z": 90.0}}]
+
+Human: Adjust robot TCP to (0.8, 0.2, 0.6) in meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 800.0, "y": 200.0, "z": 600.0}}]
+
+Human: Move TCP to coordinates (0.2, 0.8, 0.6) in millimeters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 0.2, "y": 0.8, "z": 0.6}}]
+
+Human: Move robot to coordinates (1.2, 0.8, 1.5) meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 1200.0, "y": 800.0, "z": 1500.0}}]
+
+Human: Rotate robot joint 5 for -60 degrees and robot joint 6 for 30 degrees in radians.
+Robot: [{"function": "move_joint", "kwargs": {"joint": [4, 5], "angle": [-1.05, 0.52]}}]
+
+Human: Get the current status of robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate joint 3 by 60 degrees and joint 7 by -30 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [1.05]}}, {"function": "move_joint", "kwargs": {"joint": [6], "angle": [-0.52]}}]
+
+Human: Execute a rotation of the robotic base for 90 degrees and simultaneously move the TCP along the z-axis by 150 millimeters.
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [1.57]}}, {"function": "move_tcp", "kwargs": {"z": 150.0}}]
+
+Human: Rotate joint 2 by 30 degrees, joint 7 by 45 degrees, and joint 3 by pi/4 radians
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2, 7, 3], "angle": [0.52, 0.79, 0.01]}}]
+
+Human: Adjust the angle of joint 4 to 60 degrees and joint 5 to 90 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3, 4], "angle": [1.05, 1.57]}}]
+
+Human: Rotate joint 2 by 30 degrees, joint 7 by 45 degrees, and joint 3 by 0.785 radians
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2, 7, 3], "angle": [0.52, 0.79, 0.01]}}]
+
+Human: Request information about the robot's joint angles
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Retrieve the status of all robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Shift TCP along the z-axis for 50mm
+Robot: [{"function": "move_tcp", "kwargs": {"z": 50.0}}]
+
+Human: Adjust joint 5 to -60 degrees and joint 6 to -pi/4 radians
+Robot: [{"function": "move_joint", "kwargs": {"joint": [4, 5], "angle": [-1.05, -0.01]}}]
+
+Human: Query the current status of the robot joints.
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate joint 2 by 30 degrees, joint 7 by 45 degrees, and joint 3 by pi/4
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2, 7, 3], "angle": [0.52, 0.79, 0.01]}}]
+
+Human: Rotate joint 2 by 45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [0.79]}}]
+
+Human: Perform a joint rotation of 20 degrees in radian units
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [0.35]}}]
+
+Human: Rotate the base of the robot by 45 degrees and move TCP along the x-axis for 50 mm
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [0.79]}}, {"function": "move_tcp", "kwargs": {"x": 50.0}}]
+
+Human: Move robot TCP to position (300, 200, 100) mm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 300.0, "y": 200.0, "z": 100.0}}]
+
+Human: Move the end-effector to (0, 0.4, 0.1) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": 0.0, "y": 400.0, "z": 100.0}}]
+
+Human: Rotate robot joint 2 by 45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [0.79]}}]
+
+Human: Rotate joint 6 for -30 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5], "angle": [-0.52]}}]
+
+Human: What are the joint values of the robot currently?
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move TCP along x-axis for 200 millimeters and rotate joint 4 by pi/3 radians
+Robot: [{"function": "move_tcp", "kwargs": {"x": 200.0}}, {"function": "move_joint", "kwargs": {"joint": [3], "angle": [1.05]}}]
+
+Human: Move robot's TCP to (100, -50, 200) cm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 10000.0, "y": -5000.0, "z": 20000.0}}]
+
+Human: Adjust the joint angles to [1.57, -0.785, 2.09] radians
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0, 1, 2], "angle": [1.57, -0.79, 2.09]}}]
+
+Human: Tell me the current status of robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move the robot's TCP to coordinates (0.5, 0.3, 0.7) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": 300.0, "z": 700.0}}]
+
+Human: Perform a TCP movement of 25 mm in the x-axis and 15 mm in the y-axis
+Robot: [{"function": "move_tcp", "kwargs": {"x": 25.0, "y": 15.0}}]
+
+Human: Move the robot tcp to position (0.5, -0.3, 0.7) in meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": -300.0, "z": 700.0}}]
+
+Human: Alter the orientation of the robot's base by 90 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [1.57]}}]
+
+Human: Set joint 3 to 45 degrees and joint 6 to -60 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2, 5], "angle": [0.79, -1.05]}}]
+
+Human: I want to move the end effector to position (600, 400, 300) mm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 600.0, "y": 400.0, "z": 300.0}}]
+
+Human: Adjust the robot's TCP location to (0.8, 0.2, 0.6) in meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 800.0, "y": 200.0, "z": 600.0}}]
+
+Human: Instruct the robot to shift 75 mm along the x-axis and 50 mm along the y-axis
+Robot: [{"function": "move_tcp", "kwargs": {"x": 75.0, "y": 50.0}}]
+
+Human: Rotate the second joint by -45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [1], "angle": [-0.79]}}]
+
+Human: Retrieve the current joint values
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Shift the robot's TCP along the z-axis by 300 millimeters
+Robot: [{"function": "move_tcp", "kwargs": {"z": 300.0}}]
+
+Human: Retrieve current status of robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Perform a joint calibration of the robot
+Robot: [{"function": "perform_calibration", "kwargs": {}}]
+
+Human: Rotate joint 7 by 30 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [6], "angle": [0.52]}}]
+
+Human: Retrieve the current position of all robot joints.
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Adjust the third joint by 90 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [1.57]}}]
+
+Human: Give me robot joint positions
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Command a rotation of the robot's third joint by 90 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [1.57]}}]
+
+Human: Move robot TCP along the x-axis for 1000 millimeters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 1000.0}}]
+
+Human: Move TCP along y-axis for 50 centimeters
+Robot: [{"function": "move_tcp", "kwargs": {"y": 5000.0}}]
+
+Human: Move TCP to coordinates (0.5, 0.3, 0.7) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": 300.0, "z": 700.0}}]
+
+Human: Rotate joint 5 by -45 degrees and joint 6 by pi/2 radians
+Robot: [{"function": "move_joint", "kwargs": {"joint": [4, 5], "angle": [-0.79, 0.03]}}]
+
+Human: Rotate the robot's base by 45 degrees and move the TCP along the x-axis for 50 millimeters.
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [0.79]}}, {"function": "move_tcp", "kwargs": {"x": 50.0}}]
+
+Human: Get the robot's current joint configurations
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Get the current status of robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Get the current status of robot joints.
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate the second joint by 180 degrees and the fifth joint by -90 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [1, 4], "angle": [3.14, -1.57]}}]
+
+Human: Rotate joint 4 by 60 degrees and move TCP along y-axis for 20 millimeters
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3], "angle": [1.05]}}, {"function": "move_tcp", "kwargs": {"y": 20.0}}]
+
+Human: Could you provide me with the current cartesian position of the robot's TCP?
+Robot: [{"function": "get_tcp_position", "kwargs": {}}]
+
+Human: Rotate robot base for 45 degrees and move TCP along x axis for 50 millimeters
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [0.79]}}, {"function": "move_tcp", "kwargs": {"x": 50.0}}]
+
+Human: What are the current joint values of the robot?
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate joint 4 by -90 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3], "angle": [-1.57]}}]
+
+Human: Move robot's end effector to position (100, 200, 300) cm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 10000.0, "y": 20000.0, "z": 30000.0}}]
+
+Human: Change the orientation of the base by 90 degrees and move TCP along y-axis for 100 millimeters
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [1.57]}}, {"function": "move_tcp", "kwargs": {"y": 100.0}}]
+
+Human: Rotate joint 6 by -30 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5], "angle": [-0.52]}}]
+
+Human: Move the end-effector to coordinates (0.2, 0.5, 0.8) in meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 200.0, "y": 500.0, "z": 800.0}}]
+
+Human: What are the current joint values of the robot?
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: What are the current values of robot joints?
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Relocate the end effector to (0.7, 0.5, 0.9) in millimeters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 0.7, "y": 0.5, "z": 0.9}}]
+
+Human: Check the status of all robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate the second joint by 60 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [1], "angle": [1.05]}}]
+
+Human: Rotate the robot's base for 45 degrees and move the TCP along the x-axis for 50 millimeters
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [0.79]}}, {"function": "move_tcp", "kwargs": {"x": 50.0}}]
+
+Human: Move TCP to position (0.6, -0.2, 0.9) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": 600.0, "y": -200.0, "z": 900.0}}]
+
+Human: Command the robot to move TCP to (450, 300, 250) mm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 450.0, "y": 300.0, "z": 250.0}}]
+
+Human: Change the orientation of TCP using quaternion values (0.5, -0.3, 0.7, 0.2)
+Robot: [{"function": "move_tcp", "kwargs": {"q1": 0.5, "q2": -0.3, "q3": 0.7, "q4": 0.2}}]
+
+Human: Get the current status of robot joints.
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate robot base for 45 and move TCP along x axis for 50 milimeters.
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [0.79]}}, {"function": "move_tcp", "kwargs": {"x": 50.0}}]
+
+Human: Rotate joint 2 for pi/4 radians
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [0.79]}}]
+
+Human: Move the end-effector to position (0.1, -0.2, 0.3) in meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 100.0, "y": -200.0, "z": 300.0}}]
+
+Human: Retrieve current status of robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Inquire about the robot's current joint values
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move the end-effector to position (-0.7, 0.1, -0.3) meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": -700.0, "y": 100.0, "z": -300.0}}]
+
+Human: Give me robot joints info
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate robot base for 90 degrees and move TCP along y-axis for 100 cm
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [1.57]}}, {"function": "move_tcp", "kwargs": {"y": 10000.0}}]
+
+Human: Change the position of the TCP to (0.1, -0.3, 0.5) meters.
+Robot: [{"function": "move_tcp", "kwargs": {"x": 100.0, "y": -300.0, "z": 500.0}}]
+
+Human: Move the robot TCP to position (0.05, -0.03, 0) meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 50.0, "y": -30.0, "z": 0.0}}]
+
+Human: Rotate joint 5 for 180 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [4], "angle": [3.14]}}]
+
+Human: Please provide me with the status of all robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: I need the current status of all robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Turn joint 4 by 90 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3], "angle": [1.57]}}]
+
+Human: Obtain the current status of all robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Give me robot joints info
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Turn the sixth joint of the robot by -30 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5], "angle": [-0.52]}}]
+
+Human: Retrieve the current statuses of all robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate joint 2 by 30 degrees, joint 7 by 45 degrees, and joint 3 by pi/4
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2, 7, 3], "angle": [0.52, 0.79, 0.01]}}]
+
+Human: Provide me with the status of the robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Obtain the current configuration of the robot's joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Get the current status of robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Check the current status of robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: I need to rotate joint 5 for 180 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [4], "angle": [3.14]}}]
+
+Human: Rotate joints 3, 4, and 5 by 30 degrees in total
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2, 3, 4], "angle": [0.17, 0.17, 0.17]}}]
+
+Human: Move robot TCP to (600, 700, 800) mm in the workspace
+Robot: [{"function": "move_tcp", "kwargs": {"x": 600.0, "y": 700.0, "z": 800.0}}]
+
+Human: Move the robotic arm along the x-axis for 1000mm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 1000.0}}]
+
+Human: Retrieve the current position of the end-effector.
+Robot: [{"function": "get_end_effector_position", "kwargs": {}}]
+
+Human: Move the robot along the x-axis for 1000mm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 1000.0}}]
+
+Human: Rotate joint 1 by -45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [-0.79]}}]
+
+Human: Move TCP to position (300, 150, 200) in millimeters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 300.0, "y": 150.0, "z": 200.0}}]
+
+Human: Rotate joint 1 by pi/4 radians
+Robot: [{"function": "move_joint", "kwargs": {"joint": [1], "angle": [0.79]}}]
+
+Human: Set joint 1 to 60 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [1.05]}}]
+
+Human: Request the robot's joint positions
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate joint 2 by 30 degrees, joint 7 by 45 degrees, and joint 3 by pi/4 radians
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2, 7, 3], "angle": [0.52, 0.79, 0.01]}}]
+
+Human: Move the robot along the z-axis for 500mm
+Robot: [{"function": "move_tcp", "kwargs": {"z": 500.0}}]
+
+Human: Can you rotate joint number 4 by -45 degrees?
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3], "angle": [-0.79]}}]
+
+Human: Provide me with the current robot joint angles
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move robot TCP to coordinates (0.5, 0.3, 0.7) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": 300.0, "z": 700.0}}]
+
+Human: Shift TCP along y and z axes by 20 mm and 30 mm respectively
+Robot: [{"function": "move_tcp", "kwargs": {"y": 20.0, "z": 30.0}}]
+
+Human: Turn joint 1 for 90 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [1.57]}}]
+
+Human: Rotate joint 6 by -30 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5], "angle": [-0.52]}}]
+
+Human: Move TCP to (0.3, 0.6, 0.9) m and rotate joint 3 by 60 degrees
+Robot: [{"function": "move_tcp", "kwargs": {"x": 300.0, "y": 600.0, "z": 900.0}}, {"function": "move_joint", "kwargs": {"joint": [2], "angle": [1.05]}}]
+
+Human: Shift the robot TCP along the z-axis for 300 millimeters
+Robot: [{"function": "move_tcp", "kwargs": {"z": 300.0}}]
+
+Human: Retrieve robot joint values
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate the robot base by 45 degrees and move TCP in the x-direction by 50 milimeters
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [0.79]}}, {"function": "move_tcp", "kwargs": {"x": 50.0}}]
+
+Human: Check for the status of all robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate the robot base by 90 degrees and move TCP 50 mm along the y-axis
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [1.57]}}, {"function": "move_tcp", "kwargs": {"y": 50.0}}]
+
+Human: Can you move TCP to (0.6, 0.4, 0.8) m?
+Robot: [{"function": "move_tcp", "kwargs": {"x": 600.0, "y": 400.0, "z": 800.0}}]
+
+Human: Instruct the robot to move TCP to new coordinates (0.7, -0.2, 1.0) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": 700.0, "y": -200.0, "z": 1000.0}}]
+
+Human: Rotate joint 2 for 30 and joint 6 for 45 degrees, then joint 3 for pi/4 radians
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2, 6], "angle": [0.52, 0.79]}}, {"function": "move_joint", "kwargs": {"joint": [3], "angle": [0.79]}}]
+
+Human: I want you to rotate joint 3 for 60 and joint 7 for -45 degrees then joint 5 for pi/6 radians
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3, 7], "angle": [1.05, -0.79]}}, {"function": "move_joint", "kwargs": {"joint": [5], "angle": [0.52]}}]
+
+Human: What is the current position of the robot's TCP?
+Robot: [{"function": "get_tcp_position", "kwargs": {}}]
+
+Human: Move robot TCP to coordinates (0.5, 0.3, 0.7) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": 300.0, "z": 700.0}}]
+
+Human: Shift the robot's TCP to coordinates (0.6, -0.2, 0.8) in meters.
+Robot: [{"function": "move_tcp", "kwargs": {"x": 600.0, "y": -200.0, "z": 800.0}}]
+
+Human: Obtain information on robot joint angles
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move robot along x axis by 200 mm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 200.0}}]
+
+Human: Move robot TCP to coordinates (0.5, 0.3, 0.7) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": 300.0, "z": 700.0}}]
+
+Human: Direct the robot to move TCP to (0.7, -0.5, 0.6) meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 700.0, "y": -500.0, "z": 600.0}}]
+
+Human: Move robot's first joint by -45 degrees and second joint by pi/3 radians.
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0, 1], "angle": [-0.79, 0.02]}}]
+
+Human: Rotate the third joint of the robot by π/3
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [1.05]}}]
+
+Human: Rotate joint 4 by 60 degrees and move TCP along y for 30 centimeters
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3], "angle": [1.05]}}, {"function": "move_tcp", "kwargs": {"y": 3000.0}}]
+
+Human: Rotate the base of the robot by 45 degrees and move TCP along x-axis for 50 millimeters
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [0.79]}}, {"function": "move_tcp", "kwargs": {"x": 50.0}}]
+
+Human: Set the joint values to [0.785, -1.57, 2.09] radians
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0, 1, 2], "angle": [0.79, -1.57, 2.09]}}]
+
+Human: Turn the robot base by pi/2 radians and move TCP along z-axis for 200 mm
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [1.57]}}, {"function": "move_tcp", "kwargs": {"z": 200.0}}]
+
+Human: Change the position of the robot's TCP to (100, -50, -20) in mm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 100.0, "y": -50.0, "z": -20.0}}]
+
+Human: Adjust the TCP position to coordinates (300, -150, 500) in mm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 300.0, "y": -150.0, "z": 500.0}}]
+
+Human: Move the robot TCP to coordinates (0.5, 0.3, 0.7) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": 300.0, "z": 700.0}}]
+
+Human: Move TCP to (300, 200, 100) mm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 300.0, "y": 200.0, "z": 100.0}}]
+
+Human: Move the robot's TCP to coordinates (0.5, 0.3, 0.7) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": 300.0, "z": 700.0}}]
+
+Human: Adjust joint 1 to -45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [-0.79]}}]
+
+Human: Rotate joint 3 by 60 degrees and joint 6 by -45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [1.05]}}, {"function": "move_joint", "kwargs": {"joint": [5], "angle": [-0.79]}}]
+
+Human: Move robot sixth joint for -30 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5], "angle": [-0.52]}}]
+
+Human: Determine the status of all robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move robot base by 90 degrees and then move TCP along z axis for 200mm
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [1.57]}}, {"function": "move_tcp", "kwargs": {"z": 200.0}}]
+
+Human: Increase the angle of joint 6 by 10 degrees.
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5], "angle": [0.17]}}]
+
+Human: Fetch the current joint values of the robot
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Request for the current robot joint positions
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Retrieve information on all robot joint values
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Adjust the fourth robot joint to -90 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3], "angle": [-1.57]}}]
+
+Human: Move robot sixth joint for -30 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5], "angle": [-0.52]}}]
+
+Human: Obtain information about robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Provide me with the current status of robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Please rotate joints 2 and 4 by 45 degrees each in clockwise direction
+Robot: [{"function": "move_joint", "kwargs": {"joint": [1, 3], "angle": [0.79, 0.79]}}]
+
+Human: Fetch the current status of all joints of the robot arm
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Please move the end effector to position (0.5, 0.3, 0.7) in meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": 300.0, "z": 700.0}}]
+
+Human: I want you to rotate joint 2 for 30 and joint 7 for 45 degrees then joint 3 for pi/4
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2, 7], "angle": [0.52, 0.79]}}, {"function": "move_joint", "kwargs": {"joint": [3], "angle": [0.79]}}]
+
+Human: Retrieve the current status of robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move robot tcp along x and y for 1000mm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 1000.0, "y": 1000.0}}]
+
+Human: Check the status of all robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move robot TCP to coordinates (0.5, 0.3, 0.7) meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": 300.0, "z": 700.0}}]
+
+Human: Adjust the orientation of joint number 5 for -90 degrees and joint number 2 for pi/6 radians
+Robot: [{"function": "move_joint", "kwargs": {"joint": [4], "angle": [-1.57]}}, {"function": "move_joint", "kwargs": {"joint": [1], "angle": [0.52]}}]
+
+Human: Modify joint 1 to be at 45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [0.79]}}]
+
+Human: Adjust joint 3 to -30 degrees and joint 6 to 45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [-0.52]}}, {"function": "move_joint", "kwargs": {"joint": [5], "angle": [0.79]}}]
+
+Human: Move robot TCP horizontally by 50 mm and vertically by -30 mm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 50.0, "y": -30.0}}]
+
+Human: Give me robot joints info
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Get the current status of robot joints.
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Turn the second joint by -45 degrees and then rotate the fifth joint by pi/3 radians.
+Robot: [{"function": "move_joint", "kwargs": {"joint": [1], "angle": [-0.79]}}, {"function": "move_joint", "kwargs": {"joint": [4], "angle": [1.05]}}]
+
+Human: Provide me with the current status of the robot's joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Alter the position of the robot's fourth joint to -45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3], "angle": [-0.79]}}]
+
+Human: Adjust joint 3 to 90 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [1.57]}}]
+
+Human: Can you retrieve the current joint statuses of the robot?
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate the fourth joint by 90 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3], "angle": [1.57]}}]
+
+Human: Can you provide me with an update on the robot's joint statuses?
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Query the current status of robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: I want you to rotate joint 2 for 30 and joint 7 for 45 degrees then joint 3 for pi/4
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2, 7], "angle": [0.52, 0.79]}}, {"function": "move_joint", "kwargs": {"joint": [3], "angle": [0.79]}}]
+
+Human: Change TCP to position (0.2, 0.4, 0.8) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": 200.0, "y": 400.0, "z": 800.0}}]
+
+Human: Change the position of the robot's sixth joint to -60 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5], "angle": [-1.05]}}]
+
+Human: Rotate joint 3 by -45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [-0.79]}}]
+
+Human: Rotate robot joint 2 by 45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [0.79]}}]
+
+Human: Rotate the base of the robot by 45 degrees and move TCP along the x axis for 50 mm.
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [0.79]}}, {"function": "move_tcp", "kwargs": {"x": 50.0}}]
+
+Human: Rotate joint 4 for -90 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3], "angle": [-1.57]}}]
+
+Human: Shift the robot TCP to (0.8, -0.5, 0.9) meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 800.0, "y": -500.0, "z": 900.0}}]
+
+Human: Adjust robot joint 4 to -180 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3], "angle": [-3.14]}}]
+
+Human: Move the robotic arm to the point (300, 200, 150) mm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 300.0, "y": 200.0, "z": 150.0}}]
+
+Human: Adjust the fifth joint to -60 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [4], "angle": [-1.05]}}]
+
+Human: Move robot's end-effector along x-axis for 50mm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 50.0}}]
+
+Human: Move robot TCP along the x-axis for 500 millimeters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0}}]
+
+Human: Move robot TCP along x and y for 1000mm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 1000.0, "y": 1000.0}}]
+
+Human: Rotate two robot joints, joint 1 by 90 degrees and joint 5 by 45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0, 4], "angle": [1.57, 0.79]}}]
+
+Human: Adjust the position of TCP with x: 0.2, y: -0.1, z: 0.3 in millimeters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 0.2, "y": -0.1, "z": 0.3}}]
+
+Human: Rotate joint 1 by 30 degrees and joint 7 by -45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [0.52]}}, {"function": "move_joint", "kwargs": {"joint": [6], "angle": [-0.79]}}]
+
+Human: Rotate joint 6 by 60 degrees and joint 4 by π/3
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5, 3], "angle": [1.05, 0.02]}}]
+
+Human: Rotate robot joint 2 by 45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [0.79]}}]
+
+Human: Change the end-effector's position to (0.5, 0.2, 0.6) in centimeters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 50.0, "y": 20.0, "z": 60.0}}]
+
+Human: Rotate joint 1 by π/2 radians
+Robot: [{"function": "move_joint", "kwargs": {"joint": [1], "angle": [1.57]}}]
+
+Human: Retrieve current status of robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate joint 2 by pi/4 radians
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [0.79]}}]
+
+Human: Turn joint 1 and move TCP along z-axis for 400 milimeters
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [1.57]}}, {"function": "move_tcp", "kwargs": {"z": 400.0}}]
+
+Human: Adjust joint 4 to an angle of 60 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3], "angle": [1.05]}}]
+
+Human: Rotate joint 6 by -45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5], "angle": [-0.79]}}]
+
+Human: Rotate robot base for 45 and move TCP along x axis for 50 millimeters.
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [0.79]}}, {"function": "move_tcp", "kwargs": {"x": 50.0}}]
+
+Human: Rotate joints 1 and 3 by 30 and -45 degrees respectively in degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0, 2], "angle": [0.52, -0.79]}}]
+
+Human: Give me robot joints info
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Change the position of the fourth joint to -135 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3], "angle": [-2.36]}}]
+
+Human: Move TCP along x-axis for 1000mm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 1000.0}}]
+
+Human: Get the current status of robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move TCP along x-axis for 50mm and rotate base for 45 degrees
+Robot: [{"function": "move_tcp", "kwargs": {"x": 50.0}}, {"function": "move_joint", "kwargs": {"joint": [0], "angle": [0.79]}}]
+
+Human: Get the current status of robot joints.
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate joint 2 by 45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [0.79]}}]
+
+Human: Shift the robot's TCP along the y-axis by 200 millimeters
+Robot: [{"function": "move_tcp", "kwargs": {"y": 200.0}}]
+
+Human: Please move TCP to (0.5, 0.6, 0.7) meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": 600.0, "z": 700.0}}]
+
+Human: Move the end effector to position (300, 150, 100) mm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 300.0, "y": 150.0, "z": 100.0}}]
+
+Human: Retrieve the current position of the robot's TCP
+Robot: [{"function": "get_tcp_position", "kwargs": {}}]
+
+Human: Rotate joint 2 by 45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [0.79]}}]
+
+Human: Fetch robot joint positions
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Show me the status of all robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Alter the position of the fifth robot joint to -60 degrees.
+Robot: [{"function": "move_joint", "kwargs": {"joint": [4], "angle": [-1.05]}}]
+
+Human: Rotate robot joint 4 by 90 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3], "angle": [1.57]}}]
+
+Human: Move TCP to coordinates (0.5, 0.3, 0.7) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": 300.0, "z": 700.0}}]
+
+Human: Move TCP along z-axis for 300 millimeters
+Robot: [{"function": "move_tcp", "kwargs": {"z": 300.0}}]
+
+Human: Move TCP along the x-axis for 1000 mm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 1000.0}}]
+
+Human: Turn joint 4 by -60 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3], "angle": [-1.05]}}]
+
+Human: Rotate joint 1 by pi/2 radians
+Robot: [{"function": "move_joint", "kwargs": {"joint": [1], "angle": [1.57]}}]
+
+Human: Give me robot joints info
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Get the current status of robot joints.
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Turn joint 1 by 60 degrees and joint 4 by -30 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0, 3], "angle": [1.05, -0.52]}}]
+
+Human: Change robot TCP position to (0, -0.3, 0.5) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": 0.0, "y": -300.0, "z": 500.0}}]
+
+Human: Rotate the first joint by 180 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [3.14]}}]
+
+Human: Rotate the second joint by 90 degrees and move the TCP along the y-axis for 3 cm
+Robot: [{"function": "move_joint", "kwargs": {"joint": [1], "angle": [1.57]}}, {"function": "move_tcp", "kwargs": {"y": 300.0}}]
+
+Human: Rotate joint 5 by 45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [4], "angle": [0.79]}}]
+
+Human: Get information about the current positions of robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Retrieve information about all robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate joint 2 by 30 degrees, joint 7 by 45 degrees, and joint 3 by π/4.
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2, 7], "angle": [0.52, 0.79]}}, {"function": "move_joint", "kwargs": {"joint": [3], "angle": [0.79]}}]
+
+Human: Change joint 1 position to pi/2 radians
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [1.57]}}]
+
+Human: Move robot sixth joint for -30 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5], "angle": [-0.52]}}]
+
+Human: I want you to rotate joint 2 for 30 and joint 7 for 45 degrees then joint 3 for pi/4
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2, 7], "angle": [0.52, 0.79]}}, {"function": "move_joint", "kwargs": {"joint": [3], "angle": [0.79]}}]
+
+Human: Shift TCP 100 millimeters along the y-axis
+Robot: [{"function": "move_tcp", "kwargs": {"y": 100.0}}]
+
+Human: Alter the joint positions to [-90, 45, -135] degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0, 1, 2], "angle": [-1.57, 0.79, -2.36]}}]
+
+Human: Rotate joint 5 and move TCP along x-axis for 200 mm
+Robot: [{"function": "move_joint", "kwargs": {"joint": [4], "angle": [0.0]}}, {"function": "move_tcp", "kwargs": {"x": 200.0}}]
+
+Human: Obtain the status of all robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate joint 1 by -45 degrees and joint 2 by -30 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0, 1], "angle": [-0.79, -0.52]}}]
+
+Human: Request robot joint positions
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move robot tcp along x and y for 1000mm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 1000.0, "y": 1000.0}}]
+
+Human: Change the position of the fourth robot joint to -90 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3], "angle": [-1.57]}}]
+
+Human: Move TCP along x and y axes for 1000 mm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 1000.0, "y": 1000.0}}]
+
+Human: Move the end-effector to position (0.2, 0.5, 0.6) meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 200.0, "y": 500.0, "z": 600.0}}]
+
+Human: Rotate the robot's base for 30 degrees and then move TCP along the z-axis for 100 millimeters
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [0.52]}}, {"function": "move_tcp", "kwargs": {"z": 100.0}}]
+
+Human: Retrieve information about robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move TCP along x-axis for 100mm and y-axis for 50mm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 100.0, "y": 50.0}}]
+
+Human: Rotate joint 3 by 45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [0.79]}}]
+
+Human: Retrieve the current status of all robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move sixth joint for -45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5], "angle": [-0.79]}}]
+
+Human: Adjust joint angles: Joint 1=60 degrees, Joint 4=-30 degrees.
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0, 3], "angle": [1.05, -0.52]}}]
+
+Human: Move TCP along the x-axis by 100 centimeters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 10000.0}}]
+
+Human: Change the TCP coordinates to (0.3, 0.6, 0.9) in meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 300.0, "y": 600.0, "z": 900.0}}]
+
+Human: Rotate the robot's second joint by -45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [1], "angle": [-0.79]}}]
+
+Human: Turn joint 5 by 180 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [4], "angle": [3.14]}}]
+
+Human: Get the current status of robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: I am requesting the current status of all robot joints.
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate joint 4 by 60 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3], "angle": [1.05]}}]
+
+Human: Rotate joint 6 for -30 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5], "angle": [-0.52]}}]
+
+Human: Adjust joint 6 to an angle of -180 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5], "angle": [-3.14]}}]
+
+Human: Change the TCP coordinates to (0.4, 0.2, 0.6) in meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 400.0, "y": 200.0, "z": 600.0}}]
+
+Human: Can you provide details on the current positions of all robot joints?
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Set TCP to position (0.3, 0.6, 0.9) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": 300.0, "y": 600.0, "z": 900.0}}]
+
+Human: Rotate joint 4 by 90 degrees in radians
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3], "angle": [1.57]}}]
+
+Human: Can you please give me the current joint positions?
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate joint number 4 by -90 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3], "angle": [-1.57]}}]
+
+Human: Command the robot to translate 200 mm along the z-axis
+Robot: [{"function": "move_tcp", "kwargs": {"z": 200.0}}]
+
+Human: Adjust the fifth robot joint to an angle of -90 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [4], "angle": [-1.57]}}]
+
+Human: Move the robot TCP in x and y directions by 100 millimeters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 100.0, "y": 100.0}}]
+
+Human: Get the status of all robot joints and their positions
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: I want you to rotate joint 2 for 30 and joint 7 for 45 degrees then joint 3 for pi/4
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2, 7], "angle": [0.52, 0.79]}}, {"function": "move_joint", "kwargs": {"joint": [3], "angle": [0.79]}}]
+
+Human: I want to move the end effector along the x-axis for 500 mm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0}}]
+
+Human: Retrieve robot joint values
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Change robot TCP position to (0.6, 0.4, 0.8) in centimeters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 60.0, "y": 40.0, "z": 80.0}}]
+
+Human: Move robot TCP to position (0.2, 0.4, 0.6) centimeters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 20.0, "y": 40.0, "z": 60.0}}]
+
+Human: Provide me with robot joints information
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: What are the current robot joint values?
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Turn joint 3 to 90 degrees in a counter-clockwise direction
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [1.57]}}]
+
+Human: Shift the robot TCP along the y-axis for 500 millimeters
+Robot: [{"function": "move_tcp", "kwargs": {"y": 500.0}}]
+
+Human: Translate the robot's TCP along z-axis by 1000 millimeters
+Robot: [{"function": "move_tcp", "kwargs": {"z": 1000.0}}]
+
+Human: Change the robot's joint angles to [45, -30, 60] degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0, 1, 2], "angle": [0.79, -0.52, 1.05]}}]
+
+Human: Adjust robot TCP to position (0.2, -0.1, 0.5) in centimeters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 20.0, "y": -10.0, "z": 50.0}}]
+
+Human: Request information on current status of robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move the robot TCP along the y-axis for 300 mm
+Robot: [{"function": "move_tcp", "kwargs": {"y": 300.0}}]
+
+Human: Move end effector in the y-direction by 1000 mm
+Robot: [{"function": "move_tcp", "kwargs": {"y": 1000.0}}]
+
+Human: Move TCP along x and y axes for 1000 mm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 1000.0, "y": 1000.0}}]
+
+Human: Retrieve current robot TCP coordinates
+Robot: [{"function": "get_tcp_coordinates", "kwargs": {}}]
+
+Human: Adjust the robot TCP to coordinates (0.2, 0.2, 0.5) centimeters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 20.0, "y": 20.0, "z": 50.0}}]
+
+Human: Check the current orientations of all robot joints.
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Adjust joint 1 by -45 degrees and joint 3 by 90 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0, 2], "angle": [-0.79, 1.57]}}]
+
+Human: Rotate the base by 45 degrees and move TCP along the x-axis for 50mm
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [0.79]}}, {"function": "move_tcp", "kwargs": {"x": 50.0}}]
+
+Human: Retrieve the current status of robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Shift the robot TCP by 100 mm along y-axis
+Robot: [{"function": "move_tcp", "kwargs": {"y": 100.0}}]
+
+Human: Provide me with the current status of robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move the robot TCP to (0.8, 0.9, 1.2) meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 800.0, "y": 900.0, "z": 1200.0}}]
+
+Human: Move TCP to coordinates (0.5, 0.3, 0.7) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": 300.0, "z": 700.0}}]
+
+Human: Fetch current joint statuses of the robot
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate joint 5 by -90 degrees followed by joint 2 by 180 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [4], "angle": [-1.57]}}, {"function": "move_joint", "kwargs": {"joint": [1], "angle": [3.14]}}]
+
+Human: Display the current robot joint positions
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move robot TCP to coordinates (0.5, 0.3, 0.7) in meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": 300.0, "z": 700.0}}]
+
+Human: Request robot joints information
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate joint 2 for -30 degrees and joint 4 for pi/6 radians
+Robot: [{"function": "move_joint", "kwargs": {"joint": [1, 3], "angle": [-0.52, 0.01]}}]
+
+Human: Please rotate joint 2 by 30 degrees, joint 7 by 45 degrees, and joint 3 by π/4
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2, 7], "angle": [0.52, 0.79]}}, {"function": "move_joint", "kwargs": {"joint": [3], "angle": [0.79]}}]
+
+Human: Move robot TCP in x-direction for 30 centimeters and in y-direction for -20 centimeters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 3000.0, "y": -2000.0}}]
+
+Human: Set the TCP position to (0.6, 0.4, 0.8) in centimeters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 60.0, "y": 40.0, "z": 80.0}}]
+
+Human: Get current robot joints status
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate robot base by 45 degrees and move TCP along x-axis for 50 mm
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [0.79]}}, {"function": "move_tcp", "kwargs": {"x": 50.0}}]
+
+Human: Rotate the sixth robot joint by -30 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5], "angle": [-0.52]}}]
+
+Human: Rotate joint 2 for pi/3 radians.
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [1.05]}}]
+
+Human: Move the TCP along the y-axis by 100 millimeters
+Robot: [{"function": "move_tcp", "kwargs": {"y": 100.0}}]
+
+Human: Move the robot TCP along the z-axis for 200 centimeters.
+Robot: [{"function": "move_tcp", "kwargs": {"z": 20000.0}}]
+
+Human: Rotate joint 6 by -45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5], "angle": [-0.79]}}]
+
+Human: Retrieve robot's current joint values
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move robot tcp to coordinates (0.5, 0.3, 0.7) meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": 300.0, "z": 700.0}}]
+
+Human: Shift the end-effector along y-axis by -20mm from its current location.
+Robot: [{"function": "move_tcp", "kwargs": {"y": -20.0}}]
+
+Human: Can you move TCP to (0, 0, 1) in meters?
+Robot: [{"function": "move_tcp", "kwargs": {"x": 0.0, "y": 0.0, "z": 1000.0}}]
+
+Human: Rotate robot joint 2 by 45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [0.79]}}]
+
+Human: Perform a rotation of joint 1 by 180 degrees followed by a translation of the TCP along the y-axis by 75 mm.
+Robot: [{"function": "move_joint", "kwargs": {"joint": [1], "angle": [3.14]}}, {"function": "move_tcp", "kwargs": {"y": 75.0}}]
+
+Human: Move the robot TCP to position (0.5, 0.3, 0.7) meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": 300.0, "z": 700.0}}]
+
+Human: Set robot joint 1 to 90 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [1.57]}}]
+
+Human: Modify the angles of joints [1, 3, 5] to [-90, 30, -150] degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [1, 3, 5], "angle": [-1.57, 0.52, -2.62]}}]
+
+Human: Fetch the status of all robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move robot's TCP to coordinates (0.5, 0.3, 0.7) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": 300.0, "z": 700.0}}]
+
+Human: Move the robot TCP to coordinates (0.5, 0.3, 0.7) in meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": 300.0, "z": 700.0}}]
+
+Human: I want to move the robot TCP along the z-axis by 100mm.
+Robot: [{"function": "move_tcp", "kwargs": {"z": 100.0}}]
+
+Human: Please provide the current status of all robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move robot TCP to position (100, -50, 300) mm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 100.0, "y": -50.0, "z": 300.0}}]
+
+Human: Rotate joint 3 by 90 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [1.57]}}]
+
+Human: Can you move TCP to coordinates (0.2, -0.1, 0.5) meters?
+Robot: [{"function": "move_tcp", "kwargs": {"x": 200.0, "y": -100.0, "z": 500.0}}]
+
+Human: Move robot TCP to position (0.4, 0.6, 0.5) meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 400.0, "y": 600.0, "z": 500.0}}]
+
+Human: Rotate robot joint 4 by -90 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3], "angle": [-1.57]}}]
+
+Human: What are the current joint angles of the robot arm?
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate joint 5 by -180 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [4], "angle": [-3.14]}}]
+
+Human: Move robot TCP to location (0.3, 0.4, 0.6) meters in XYZ coordinates
+Robot: [{"function": "move_tcp", "kwargs": {"x": 300.0, "y": 400.0, "z": 600.0}}]
+
+Human: Obtain information about the current position of the robot's TCP
+Robot: [{"function": "get_tcp_position", "kwargs": {}}]
+
+Human: Get me the current statuses of all robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate joint 5 by -60 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [4], "angle": [-1.05]}}]
+
+Human: Rotate joint 6 by 30 degrees and joint 1 by -45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5, 0], "angle": [0.52, -0.79]}}]
+
+Human: Rotate robot joint 2 by 45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [0.79]}}]
+
+Human: Rotate joint 7 by 90 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [6], "angle": [1.57]}}]
+
+Human: Get the current status of robot joints.
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Can you provide me with the current robot joint statuses?
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move the end-effector along the Z-axis for 200 millimeters
+Robot: [{"function": "move_tcp", "kwargs": {"z": 200.0}}]
+
+Human: Rotate joint 6 by 30 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5], "angle": [0.52]}}]
+
+Human: Rotate robot base by 45 degrees and move TCP along x-axis for 50 millimeters
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [0.79]}}, {"function": "move_tcp", "kwargs": {"x": 50.0}}]
+
+Human: Rotate joint angle number six by 15 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5], "angle": [0.26]}}]
+
+Human: Rotate joint 3 by -45 degrees and joint 5 by 60 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [-0.79]}}, {"function": "move_joint", "kwargs": {"joint": [4], "angle": [1.05]}}]
+
+Human: Get the current status of robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move robot TCP to position (0.5, 0.3, 0.7) centimeters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 50.0, "y": 30.0, "z": 70.0}}]
+
+Human: Adjust TCP position to (500, -200, 300) mm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": -200.0, "z": 300.0}}]
+
+Human: Rotate robot joint 2 by 45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [0.79]}}]
+
+Human: Could you move TCP to position (300, 200, 500) in mm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 300.0, "y": 200.0, "z": 500.0}}]
+
+Human: Rotate joint 5 by -60 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [4], "angle": [-1.05]}}]
+
+Human: Alter the second joint to 90 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [1], "angle": [1.57]}}]
+
+Human: Change the orientation of the robot's third joint by -60 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [-1.05]}}]
+
+Human: Retrieve information about the robot's joint positions
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Get the current status of robot joints.
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Display the current robot joint positions
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Alter the angle of joint 5 to 120 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [4], "angle": [2.09]}}]
+
+Human: Move TCP to (0.8, 0.6, 1) meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 800.0, "y": 600.0, "z": 1000.0}}]
+
+Human: Rotate the third joint by 45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [0.79]}}]
+
+Human: Please retrieve the current status of all robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Retrieve robot joint angles
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Adjust TCP position to (0.45, 0.25, 0.6) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": 450.0, "y": 250.0, "z": 600.0}}]
+
+Human: Alter the position of the robot's TCP to (0.4, 0.2, 0.8) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": 400.0, "y": 200.0, "z": 800.0}}]
+
+Human: Can you move the robot's end effector to (0.5, -0.3, 0.7) meters?
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": -300.0, "z": 700.0}}]
+
+Human: Get the current status of robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Provide me with the current status of all robot joints.
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate joint 2 for 30 degrees and joint 5 for -45 degrees then joint 3 for pi/4 radians
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2, 5], "angle": [0.52, -0.79]}}, {"function": "move_joint", "kwargs": {"joint": [3], "angle": [0.79]}}]
+
+Human: Assist in programming a coordinated motion involving multiple joints and cartesian movements.
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0, 1, 2, 3, 4, 5, 6], "angle": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}}, {"function": "move_tcp", "kwargs": {"x": 0.0, "y": 0.0, "z": 0.0}}]
+
+Human: Provide me with the current joint angles of the robot arm
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Adjust the first joint to -45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [-0.79]}}]
+
+Human: Change the position of TCP to (0, -0.5, 0) in meters and then adjust joint number six by -90 degrees.
+Robot: [{"function": "move_tcp", "kwargs": {"x": 0.0, "y": -500.0, "z": 0.0}}, {"function": "move_joint", "kwargs": {"joint": [5], "angle": [-1.57]}}]
+
+Human: Move robot TCP to coordinates (0.5, 0.3, 0.7) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": 300.0, "z": 700.0}}]
+
+Human: Move robot tcp along x and y for 1000mm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 1000.0, "y": 1000.0}}]
+
+Human: Rotate joint 2 for 45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [0.79]}}]
+
+Human: Retrieve the current joint positions of the robot arm.
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate joint 2 for 45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [0.79]}}]
+
+Human: Adjust joint 4 to 90 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3], "angle": [1.57]}}]
+
+Human: Move robot TCP to coordinates (0.5, 0.3, 0.7) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": 300.0, "z": 700.0}}]
+
+Human: Please move TCP to position (1.5, 2, 1.2) meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 1500.0, "y": 2000.0, "z": 1200.0}}]
+
+Human: Show me the robot joints information
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move the tool along the Y-axis for 50 centimeters
+Robot: [{"function": "move_tcp", "kwargs": {"y": 5000.0}}]
+
+Human: Adjust the robot's TCP to position (0.6, 0.8, 0.9) meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 600.0, "y": 800.0, "z": 900.0}}]
+
+Human: Get the status of the robot's joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Adjust the TCP to (-0.3, 0.2, 0.5) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": -300.0, "y": 200.0, "z": 500.0}}]
+
+Human: Rotate robot sixth joint by -30 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5], "angle": [-0.52]}}]
+
+Human: Obtain the current values of all robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Provide me with the current joint angles of the robot arm.
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: What are the current joint values of the robot?
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move the robot TCP by 300 millimeters along the y-axis
+Robot: [{"function": "move_tcp", "kwargs": {"y": 300.0}}]
+
+Human: Move TCP to (0.1, -0.2, 0.8) meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 100.0, "y": -200.0, "z": 800.0}}]
+
+Human: Rotate the robot's base by 45 degrees and move the TCP along the x-axis by 50 millimeters.
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [0.79]}}, {"function": "move_tcp", "kwargs": {"x": 50.0}}]
+
+Human: Adjust joint 4 to 135 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3], "angle": [2.36]}}]
+
+Human: Ask for an update on robot joints statuses
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Direct the robotic arm to rotate its base by -90 degrees and simultaneously translate its TCP along the x-axis by 100 mm.
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [-1.57]}}, {"function": "move_tcp", "kwargs": {"x": 100.0}}]
+
+Human: Retrieve the current position of the robot's TCP
+Robot: [{"function": "get_tcp_position", "kwargs": {}}]
+
+Human: Rotate joint 2 by 45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [0.79]}}]
+
+Human: Rotate robot sixth joint by -30 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5], "angle": [-0.52]}}]
+
+Human: Rotate joint 3 by 90 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [1.57]}}]
+
+Human: Turn joint 1 by 180 degrees and joint 7 by -45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0, 6], "angle": [3.14, -0.79]}}]
+
+Human: Get robot joint status
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Get the current status of end effector position
+Robot: [{"function": "get_end_effector_status", "kwargs": {}}]
+
+Human: Modify the robot TCP to position (0.6, 0.7, 1.0) meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 600.0, "y": 700.0, "z": 1000.0}}]
+
+Human: Shift the robot's base by 90 degrees and move TCP along z axis for 200 mm
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [1.57]}}, {"function": "move_tcp", "kwargs": {"z": 200.0}}]
+
+Human: Rotate the base of the robot by 45 degrees and move TCP along the x-axis for 50 millimeters.
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [0.79]}}, {"function": "move_tcp", "kwargs": {"x": 50.0}}]
+
+Human: Move the end-effector to position (0.1, 0.5, 0) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": 100.0, "y": 500.0, "z": 0.0}}]
+
+Human: Adjust the position of robot fourth joint to -60 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3], "angle": [-1.05]}}]
+
+Human: Rotate robot joint 1 by -45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [-0.79]}}]
+
+Human: Retrieve the current joint values of the robot
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Displace the TCP by (10, -5, 20) millimeters from its current position
+Robot: [{"function": "move_tcp", "kwargs": {"x": 10.0, "y": -5.0, "z": 20.0}}]
+
+Human: I need to know the current positions of all robotic arm joints.
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate robot base for 45 and move TCP along x axis for 50 milimeters
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [0.79]}}, {"function": "move_tcp", "kwargs": {"x": 50.0}}]
+
+Human: Instruct the robot to move its TCP to (0.4, -0.2, 0.6) in centimeters.
+Robot: [{"function": "move_tcp", "kwargs": {"x": 40.0, "y": -20.0, "z": 60.0}}]
+
+Human: Adjust TCP position to (0.8, -0.3, 0.5) in meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 800.0, "y": -300.0, "z": 500.0}}]
+
+Human: Adjust the fourth joint to an angle of pi/2 radians.
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3], "angle": [1.57]}}]
+
+Human: Rotate robot joint 4 by 90 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3], "angle": [1.57]}}]
+
+Human: Show me the current positions of all the robot's joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate the fourth joint for -45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3], "angle": [-0.79]}}]
+
+Human: Can you please rotate the second joint by 90 degrees?
+Robot: [{"function": "move_joint", "kwargs": {"joint": [1], "angle": [1.57]}}]
+
+Human: Move robot TCP to position (0.1, 0.2, 0.3) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": 100.0, "y": 200.0, "z": 300.0}}]
+
+Human: Move TCP along y-axis for 500mm
+Robot: [{"function": "move_tcp", "kwargs": {"y": 500.0}}]
+
+Human: Spin joint 3 for 90 degrees and joint 4 for pi/3 radians
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2, 3], "angle": [1.57, 0.02]}}]
+
+Human: Move robot tool center point to position (0.5, 0.3, 0.7) meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": 300.0, "z": 700.0}}]
+
+Human: Rotate joint 6 for 60 degrees and joint 2 for 30 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5], "angle": [1.05]}}, {"function": "move_joint", "kwargs": {"joint": [1], "angle": [0.52]}}]
+
+Human: Move the robot to position (100, 200, 300) in millimeters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 100.0, "y": 200.0, "z": 300.0}}]
+
+Human: Can you please move the robot's TCP to coordinates (0.5, 0.3, 0.7) meters?
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": 300.0, "z": 700.0}}]
+
+Human: Adjust joint 3 to -90 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [-1.57]}}]
+
+Human: Issue a command to move the robot's TCP to (0.2, 0.8, 0.5) in meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 200.0, "y": 800.0, "z": 500.0}}]
+
+Human: Perform a simultaneous rotation of joints 1 and 4 by 60 degrees each.
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0, 3], "angle": [1.05, 1.05]}}]
+
+Human: Rotate joint 5 by -90 degrees and move TCP along z-axis for 20mm
+Robot: [{"function": "move_joint", "kwargs": {"joint": [4], "angle": [-1.57]}}, {"function": "move_tcp", "kwargs": {"z": 20.0}}]
+
+Human: Rotate joint 2 by 45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [0.79]}}]
+
+Human: Move the robot base for -30 degrees and then rotate joint number 6 for pi/3 radians
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [-0.52]}}, {"function": "move_joint", "kwargs": {"joint": [5], "angle": [1.05]}}]
+
+Human: Execute a coordinated movement of joints 1, 3, and 5 to angles 30, 60, and 90 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0, 2, 4], "angle": [0.52, 1.05, 1.57]}}]
+
+Human: Rotate robot's sixth joint by -30 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5], "angle": [-0.52]}}]
+
+Human: Rotate joint 7 by pi/6 radians and joint 3 by -60 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [6], "angle": [0.52]}}, {"function": "move_joint", "kwargs": {"joint": [2], "angle": [-1.05]}}]
+
+Human: Please rotate joint 2 by 30 degrees and joint 5 by 45 degrees, then joint 3 by 0.785 radians
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2, 5], "angle": [0.52, 0.79]}}, {"function": "move_joint", "kwargs": {"joint": [3], "angle": [0.79]}}]
+
+Human: Check the current joint angles
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate joint 4 by 90 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3], "angle": [1.57]}}]
+
+Human: Rotate joint 2 for 30 degrees and joint 7 for 45 degrees then joint 3 for 0.785 radians
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2, 7], "angle": [0.52, 0.79]}}, {"function": "move_joint", "kwargs": {"joint": [3], "angle": [0.79]}}]
+
+Human: Retrieve the current status of all robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: I want you to rotate joint 2 for 30 and joint 7 for 45 degrees then joint 3 for pi/4
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2, 7], "angle": [0.52, 0.79]}}, {"function": "move_joint", "kwargs": {"joint": [3], "angle": [0.79]}}]
+
+Human: Rotate the sixth joint by -30 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5], "angle": [-0.52]}}]
+
+Human: Turn joint number 3 by -45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [-0.79]}}]
+
+Human: Move the robot TCP along the x and y axes for 1000 millimeters.
+Robot: [{"function": "move_tcp", "kwargs": {"x": 1000.0, "y": 1000.0}}]
+
+Human: Move the TCP along the X-axis for 1000 millimeters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 1000.0}}]
+
+Human: Adjust the second joint to -60 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [1], "angle": [-1.05]}}]
+
+Human: Retrieve current status of robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: I want to rotate joint 6 by -45 degrees and joint 0 by pi radians
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5], "angle": [-0.79]}}, {"function": "move_joint", "kwargs": {"joint": [0], "angle": [3.14]}}]
+
+Human: Obtain current robot joint angles
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate robot base for 45 and move TCP along x axis for 50 millimeters.
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [0.79]}}, {"function": "move_tcp", "kwargs": {"x": 50.0}}]
+
+Human: Retrieve the current robot joint positions.
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate joint 6 by -30 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5], "angle": [-0.52]}}]
+
+Human: Rotate the robot's base by 45 degrees and move the TCP along the x-axis by 50 millimeters
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [0.79]}}, {"function": "move_tcp", "kwargs": {"x": 50.0}}]
+
+Human: Rotate joint 1 by -60 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [1], "angle": [-1.05]}}]
+
+Human: Rotate joint 2 by 30 degrees, joint 7 by 45 degrees, and joint 3 by pi/16 radians
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2, 7], "angle": [0.52, 0.79]}}, {"function": "move_joint", "kwargs": {"joint": [3], "angle": [0.2]}}]
+
+Human: Get the current status of robot joints.
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move robot sixth joint for -30 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5], "angle": [-0.52]}}]
+
+Human: Rotate joint 2 by 45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [0.79]}}]
+
+Human: Move the sixth robot joint by -30 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5], "angle": [-0.52]}}]
+
+Human: I want you to rotate joint 2 for 30 and joint 7 for 45 degrees then joint 3 for pi/4
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2, 7], "angle": [0.52, 0.79]}}, {"function": "move_joint", "kwargs": {"joint": [3], "angle": [0.79]}}]
+
+Human: Rotate robot base by 45 degrees and move TCP along the x-axis for 50 millimeters
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [0.79]}}, {"function": "move_tcp", "kwargs": {"x": 50.0}}]
+
+Human: I want to rotate joint 1 for 60 degrees and joint 5 for pi/2 radians
+Robot: [{"function": "move_joint", "kwargs": {"joint": [1, 5], "angle": [1.05, 0.03]}}]
+
+Human: Rotate the robot's base by 45 degrees and move TCP along the x-axis for 50mm
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [0.79]}}, {"function": "move_tcp", "kwargs": {"x": 50.0}}]
+
+Human: Move the robot's end effector 100mm along the z-axis
+Robot: [{"function": "move_tcp", "kwargs": {"z": 100.0}}]
+
+Human: Get me the current statuses of all robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move TCP along the y-axis for 200 millimeters
+Robot: [{"function": "move_tcp", "kwargs": {"y": 200.0}}]
+
+Human: Move the robot tool center point 0.3 meters in the z-axis
+Robot: [{"function": "move_tcp", "kwargs": {"z": 300.0}}]
+
+Human: Move the robot's TCP to position (0.7, -0.3, 1) meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 700.0, "y": -300.0, "z": 1000.0}}]
+
+Human: Retrieve status of all robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate joint 2 by 45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [0.79]}}]
+
+Human: Rotate sixth joint by -45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5], "angle": [-0.79]}}]
+
+Human: Rotate joint 4 for -90 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3], "angle": [-1.57]}}]
+
+Human: Obtain the current joint values
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: I need the current joint configuration of the robot arm
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move the robot TCP to coordinates (0.5, 0.3, 0.7) meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": 300.0, "z": 700.0}}]
+
+Human: Retrieve robot's joint status
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Obtain current status of robot TCP
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move robot sixth joint for -30 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5], "angle": [-0.52]}}]
+
+Human: Rotate robot's base for 45 degrees and move TCP along x-axis for 50 millimeters
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [0.79]}}, {"function": "move_tcp", "kwargs": {"x": 50.0}}]
+
+Human: Request the current status of robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move robot tcp along x and y for 1000mm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 1000.0, "y": 1000.0}}]
+
+Human: Move robot TCP to position (50, 30, 70) millimeters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 50.0, "y": 30.0, "z": 70.0}}]
+
+Human: Turn joint 5 by -90 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [4], "angle": [-1.57]}}]
+
+Human: Get the current robot joint values
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Spin joint six by -45 degrees and shift TCP by -30 mm in z-direction.
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5], "angle": [-0.79]}}, {"function": "move_tcp", "kwargs": {"z": -30.0}}]
+
+Human: Could you please move the robot's TCP to position (0.1, -0.3, 0.5) in meters?
+Robot: [{"function": "move_tcp", "kwargs": {"x": 100.0, "y": -300.0, "z": 500.0}}]
+
+Human: Show me the current status of the robot's joints.
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: I want to rotate joint 2 by pi/3 radians
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [1.05]}}]
+
+Human: Rotate robot joint 2 by 45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [0.79]}}]
+
+Human: Move the robot TCP 0.4 meters along the z-axis
+Robot: [{"function": "move_tcp", "kwargs": {"z": 400.0}}]
+
+Human: Query the current robot joint angles.
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Translate robot TCP to (0.3, 0.4, 0.5) m relative to its current position
+Robot: [{"function": "move_tcp", "kwargs": {"x": 300.0, "y": 400.0, "z": 500.0}}]
+
+Human: Retrieve the current status of all robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Shift the robot's end effector to position (0.5, -0.2, 0.8) meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": -200.0, "z": 800.0}}]
+
+Human: Retrieve robot joint values
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Request for robot joint status
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Inform me about the position of the robot's joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate joint number 3 for pi/2 radians
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [1.57]}}]
+
+Human: Retrieve robot joint statuses
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Get the current status of robot joints.
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate joint 4 by -90 degrees and move TCP to (0.8, 0.4, 0.6) meters
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3], "angle": [-1.57]}}, {"function": "move_tcp", "kwargs": {"x": 800.0, "y": 400.0, "z": 600.0}}]
+
+Human: Issue a command to move the robot's TCP to coordinates (100, -50, 200) mm immediately.
+Robot: [{"function": "move_tcp", "kwargs": {"x": 100.0, "y": -50.0, "z": 200.0}}]
+
+Human: Adjust the third joint to a position of pi/3 radians
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [1.05]}}]
+
+Human: Move TCP to position (0.2, -0.4, 0.6) m using relative coordinates
+Robot: [{"function": "move_tcp", "kwargs": {"x": 200.0, "y": -400.0, "z": 600.0}}]
+
+Human: Please rotate joint 2 by 30 degrees, joint 7 by 45 degrees, and joint 3 by pi/4
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2, 7, 3], "angle": [0.52, 0.79, 0.01]}}]
+
+Human: Inquire about the robot's joint positions
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Show me the current joint values of the robot
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Retrieve the current status of robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Fetch the current TCP position of the robot
+Robot: [{"function": "get_tcp_position", "kwargs": {}}]
+
+Human: Adjust the robot's TCP to position (0.8, -0.5, 0.6) meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 800.0, "y": -500.0, "z": 600.0}}]
+
+Human: Move the robot's TCP to coordinates (0.5, 0.3, 0.7) meters.
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": 300.0, "z": 700.0}}]
+
+Human: Move the robot's TCP to coordinates (0.5, 0.3, 0.7) meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": 300.0, "z": 700.0}}]
+
+Human: Adjust the current joint angles by adding 20 degrees to joint 3.
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [0.35]}}]
+
+Human: Please rotate joint 5 for -60 degrees and move TCP in the z-direction for 30mm
+Robot: [{"function": "move_joint", "kwargs": {"joint": [4], "angle": [-1.05]}}, {"function": "move_tcp", "kwargs": {"z": 30.0}}]
+
+Human: Rotate robot base for 45 and move TCP along x axis for 50 millimeters
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [0.79]}}, {"function": "move_tcp", "kwargs": {"x": 50.0}}]
+
+Human: Rotate the third joint of the robotic arm by -60 degrees.
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [-1.05]}}]
+
+Human: Retrieve the current status of robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Provide me with the current angles of all robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Provide joint details of the robot
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move the TCP along the x-axis by 50 mm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 50.0}}]
+
+Human: Change position of TCP to (0.9, 0.1, 0.4) meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 900.0, "y": 100.0, "z": 400.0}}]
+
+Human: Turn joint 6 for pi/4 radians and move TCP along z-axis for 100 millimeters
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5], "angle": [0.79]}}, {"function": "move_tcp", "kwargs": {"z": 100.0}}]
+
+Human: Move robot TCP to position (250, 150, 50) mm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 250.0, "y": 150.0, "z": 50.0}}]
+
+Human: Show me the current configuration of the robotic arm
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate joint 2 by 30 degrees and joint 7 by 45 degrees, then joint 3 by pi/4
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2, 7], "angle": [0.52, 0.79]}}, {"function": "move_joint", "kwargs": {"joint": [3], "angle": [0.79]}}]
+
+Human: Retrieve the status of all robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Obtain the current joint configuration
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate robot joint 6 by -30 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5], "angle": [-0.52]}}]
+
+Human: Retrieve data regarding the robot's joint angles
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate joint 2 by 30 degrees, joint 7 by 45 degrees, and joint 3 by pi/4
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2, 7, 3], "angle": [0.52, 0.79, 0.01]}}]
+
+Human: Move robot TCP along z-axis for 200 millimeters
+Robot: [{"function": "move_tcp", "kwargs": {"z": 200.0}}]
+
+Human: Translate the TCP to (300, 200, 100) mm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 300.0, "y": 200.0, "z": 100.0}}]
+
+Human: Please get the status of all the robot joints.
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move TCP to coordinates (100, 50, 30) millimeters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 100.0, "y": 50.0, "z": 30.0}}]
+
+Human: Turn joint 5 by 90 degrees and joint 6 by π/2 radians
+Robot: [{"function": "move_joint", "kwargs": {"joint": [4, 5], "angle": [1.57, 0.03]}}]
+
+Human: Rotate the robot's base by 45 degrees and move the TCP along the x-axis by 50 millimeters
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [0.79]}}, {"function": "move_tcp", "kwargs": {"x": 50.0}}]
+
+Human: Rotate joint 1 for π/6 radians
+Robot: [{"function": "move_joint", "kwargs": {"joint": [1], "angle": [0.52]}}]
+
+Human: Move the robot TCP to position (0.6, 0.4, 0.9) in centimeters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 60.0, "y": 40.0, "z": 90.0}}]
+
+Human: Move the end effector along the x-axis by 30 centimeters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 3000.0}}]
+
+Human: Move the robot TCP to (0.3, 0.5, 0.7) centimeters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 30.0, "y": 50.0, "z": 70.0}}]
+
+Human: Can you retrieve information about all the joints' positions?
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move the robot TCP to (0.8, 0.2, 0.6) in millimeters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 800.0, "y": 200.0, "z": 600.0}}]
+
+Human: Move robot's TCP to (1.5, -0.3, 0.7) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": 1500.0, "y": -300.0, "z": 700.0}}]
+
+Human: Retrieve the current joint angles of the robot
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Retrieve robot joint information
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate joint 4 by -90 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3], "angle": [-1.57]}}]
+
+Human: Retrieve the current TCP position.
+Robot: [{"function": "get_tcp_position", "kwargs": {}}]
+
+Human: Move the robot along the y-axis for 300mm
+Robot: [{"function": "move_tcp", "kwargs": {"y": 300.0}}]
+
+Human: Change the position of the robot TCP to (0.8, -0.2, 1.5) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": 800.0, "y": -200.0, "z": 1500.0}}]
+
+Human: Rotate joint 4 by 0.785 radians and joint 1 by -90 degrees.
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3], "angle": [0.79]}}, {"function": "move_joint", "kwargs": {"joint": [0], "angle": [-1.57]}}]
+
+Human: Check the current status of robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move robot TCP along y-axis by 500mm
+Robot: [{"function": "move_tcp", "kwargs": {"y": 500.0}}]
+
+Human: Rotate the first joint by -45 degrees and move TCP along y-axis for 100 mm
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [-0.79]}}, {"function": "move_tcp", "kwargs": {"y": 100.0}}]
+
+Human: Give me robot joint information
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate joint number 4 by 60 degrees and joint number 1 by pi/3 radians
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3], "angle": [1.05]}}, {"function": "move_joint", "kwargs": {"joint": [0], "angle": [1.05]}}]
+
+Human: Get the status of robot end effector
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move TCP to coordinates (0.7, 0.6, 0.3) in meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 700.0, "y": 600.0, "z": 300.0}}]
+
+Human: Move TCP to coordinates (-0.2, 0.1, 0.8) in meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": -200.0, "y": 100.0, "z": 800.0}}]
+
+Human: Tell me the current values of all robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move robot sixth joint for -30 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5], "angle": [-0.52]}}]
+
+Human: Rotate joint 6 for -45 degrees and move TCP along z-axis for 100mm
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5], "angle": [-0.79]}}, {"function": "move_tcp", "kwargs": {"z": 100.0}}]
+
+Human: Move robot tcp along x and y for 1000mm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 1000.0, "y": 1000.0}}]
+
+Human: Perform a TCP movement in the x and z directions by 200mm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 200.0, "z": 200.0}}]
+
+Human: Set joint 6 to -pi/6 radians
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5], "angle": [-0.52]}}]
+
+Human: Query the current position of robot end effector
+Robot: [{"function": "get_end_effector_position", "kwargs": {}}]
+
+Human: Rotate joint 2 by 45 degrees and joint 5 by -60 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2, 5], "angle": [0.79, -1.05]}}]
+
+Human: I need to move the robot's TCP to (800, -500, 600) mm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 800.0, "y": -500.0, "z": 600.0}}]
+
+Human: Rotate joint 4 by -90 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3], "angle": [-1.57]}}]
+
+Human: Request for the present robot joints configuration.
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Shift the robot's base by 90 degrees and move the TCP along the y-axis by 100 millimeters
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [1.57]}}, {"function": "move_tcp", "kwargs": {"y": 100.0}}]
+
+Human: Move TCP to position (0.8, 0.2, 0.5) cm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 80.0, "y": 20.0, "z": 50.0}}]
+
+Human: Get information about robot joint positions
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate the second joint by pi/3 radians
+Robot: [{"function": "move_joint", "kwargs": {"joint": [1], "angle": [1.05]}}]
+
+Human: Please retrieve the current status of all robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate joint 1 for pi/3 radians
+Robot: [{"function": "move_joint", "kwargs": {"joint": [1], "angle": [1.05]}}]
+
+Human: I want to rotate joint 2 by 30 degrees and joint 7 by 45 degrees, then joint 3 by pi/4
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2, 7], "angle": [0.52, 0.79]}}, {"function": "move_joint", "kwargs": {"joint": [3], "angle": [0.79]}}]
+
+Human: Move TCP in x and y directions by distances of 300mm and -200mm respectively.
+Robot: [{"function": "move_tcp", "kwargs": {"x": 300.0, "y": -200.0}}]
+
+Human: Move the robot's TCP to position (0.5, 0.3, 0.7) meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": 300.0, "z": 700.0}}]
+
+Human: Move the sixth joint of the robot for -30 degrees.
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5], "angle": [-0.52]}}]
+
+Human: Adjust TCP position to (0.9, -0.4, 0.8) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": 900.0, "y": -400.0, "z": 800.0}}]
+
+Human: Move the robotic arm to position (0.3, -0.7, 0.4) meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 300.0, "y": -700.0, "z": 400.0}}]
+
+Human: Rotate joint 2 by 45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [0.79]}}]
+
+Human: Get the current status of robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Retrieve information about robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate joint 5 for -90 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [4], "angle": [-1.57]}}]
+
+Human: Move TCP in the x direction for 20mm and in the y direction for 30mm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 20.0, "y": 30.0}}]
+
+Human: Get the current status of robot joints.
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Provide me with the current status of the robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Shift robot base by 90 degrees and move TCP along the z-axis for 30mm
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [1.57]}}, {"function": "move_tcp", "kwargs": {"z": 30.0}}]
+
+Human: Retrieve the current joint positions of the robot
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Provide me with the current position of the robot's TCP
+Robot: [{"function": "get_tcp_position", "kwargs": {}}]
+
+Human: Set the orientation of robot fifth joint to 90 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [4], "angle": [1.57]}}]
+
+Human: Translate TCP to (0.6, 0.9, 1.2) meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 600.0, "y": 900.0, "z": 1200.0}}]
+
+Human: Move robot TCP to position (300, 200, 500) cm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 30000.0, "y": 20000.0, "z": 50000.0}}]
+
+Human: Obtain the current status of all robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate joint 4 and move TCP along y-axis for 300 mm
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3], "angle": [0.0]}}, {"function": "move_tcp", "kwargs": {"y": 300.0}}]
+
+Human: Obtain the current status of robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Give me robot joints info
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate joint 2 by 45 degrees.
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [0.79]}}]
+
+Human: Get current robot joint values
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move robot TCP to coordinates (0.5, 0.3, 0.7) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": 300.0, "z": 700.0}}]
+
+Human: Provide current joint information
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Make a joint rotation of joint 6 by 45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5], "angle": [0.79]}}]
+
+Human: Adjust robot's fifth joint to -90 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [4], "angle": [-1.57]}}]
+
+Human: I need the current TCP position and orientation
+Robot: [{"function": "get_tcp_values", "kwargs": {}}]
+
+Human: Inspect the current robot joint configuration
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Alter position: TCP at (300, -150, 100) mm.
+Robot: [{"function": "move_tcp", "kwargs": {"x": 300.0, "y": -150.0, "z": 100.0}}]
+
+Human: Set the second joint at an angle of 60 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [1], "angle": [1.05]}}]
+
+Human: Get the current status of robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate the robot base by 45 degrees and move the TCP along the x-axis by 50 millimeters
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [0.79]}}, {"function": "move_tcp", "kwargs": {"x": 50.0}}]
+
+Human: Modify the angle of robot third joint to pi
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [3.14]}}]
+
+Human: Rotate joint 2 by 45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [0.79]}}]
+
+Human: Rotate the fifth joint by -45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [4], "angle": [-0.79]}}]
+
+Human: Retrieve the current joint values of the robot
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate joint 3 for 60 degrees and joint 6 for 30 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [1.05]}}, {"function": "move_joint", "kwargs": {"joint": [5], "angle": [0.52]}}]
+
+Human: Rotate joint 2 by 45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [0.79]}}]
+
+Human: Retrieve robot joint values
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate robot base by 45 degrees and move TCP along x-axis for 50 millimeters
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [0.79]}}, {"function": "move_tcp", "kwargs": {"x": 50.0}}]
+
+Human: Get robot joints status
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Get the current status of robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Alter the position of joint 4 by π/3 radians
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3], "angle": [1.05]}}]
+
+Human: Obtain information about robot joint angles
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move the robot's sixth joint by -30 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5], "angle": [-0.52]}}]
+
+Human: Translate the robot's TCP in the x, y, and z directions by 0.3 m, -0.2 m, and 0.5 m, respectively
+Robot: [{"function": "move_tcp", "kwargs": {"x": 300.0, "y": -200.0, "z": 500.0}}]
+
+Human: Move TCP to coordinates (300, -200, 100) mm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 300.0, "y": -200.0, "z": 100.0}}]
+
+Human: Move the robot's TCP to coordinates (0.5, 0.3, 0.7) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": 300.0, "z": 700.0}}]
+
+Human: Adjust the position of the robot's TCP to (-0.5, 0.3, 0.9) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": -500.0, "y": 300.0, "z": 900.0}}]
+
+Human: Move the robot TCP along the x and y axes by 1000mm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 1000.0, "y": 1000.0}}]
+
+Human: Alter the joint angles to 30 degrees, -45 degrees, and 60 degrees for joints 1, 2, and 6 respectively
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0, 1, 5], "angle": [0.52, -0.79, 1.05]}}]
+
+Human: Adjust TCP to (0.2, 0.5, 0.4) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": 200.0, "y": 500.0, "z": 400.0}}]
+
+Human: What are the current joint values of the robot?
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Request the status of all robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move the end effector to position (0.7, 0.5, 1) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": 700.0, "y": 500.0, "z": 1000.0}}]
+
+Human: Rotate joint 2 by 45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [0.79]}}]
+
+Human: Motion required: Move TCP to (400, 300, 500) in millimeters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 400.0, "y": 300.0, "z": 500.0}}]
+
+Human: Provide me with the current joint states of the robot.
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move robot sixth joint for -30 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5], "angle": [-0.52]}}]
+
+Human: Alter joint angles: Joint1=45°, Joint3=90°, Joint6=135°
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0, 2, 5], "angle": [0.79, 1.57, 2.36]}}]
+
+Human: I need the current information about the robot joints' statuses
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Check the current pose of the robot end effector
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate joint 2 by 30 degrees, joint 7 by 45 degrees, and joint 3 by pi/4 radians
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2, 7, 3], "angle": [0.52, 0.79, 0.01]}}]
+
+Human: Rotate joint 2 by 30 degrees, joint 7 by 45 degrees, and joint 3 by pi/4
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2, 7, 3], "angle": [0.52, 0.79, 0.01]}}]
+
+Human: Rotate the third joint by -60 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [-1.05]}}]
+
+Human: Rotate joint 1 by 30 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [0.52]}}]
+
+Human: Please rotate joint 6 by -30 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5], "angle": [-0.52]}}]
+
+Human: Move robot tcp along x and y axes for 1000 millimeters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 1000.0, "y": 1000.0}}]
+
+Human: Rotate the base of the robot for 90 degrees and move TCP along y axis for 30 millimeters
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [1.57]}}, {"function": "move_tcp", "kwargs": {"y": 30.0}}]
+
+Human: Get the current position of robot TCP.
+Robot: [{"function": "get_tcp_position", "kwargs": {}}]
+
+Human: Retrieve robot joint values
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move TCP to coordinates (100, 50, 75) in centimeters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 10000.0, "y": 5000.0, "z": 7500.0}}]
+
+Human: Instruct the robot to rotate joint 5 to an absolute position of pi/3 radians and then move its TCP to (0, 0, 300) mm.
+Robot: [{"function": "move_joint", "kwargs": {"joint": [4], "angle": [1.05]}}, {"function": "move_tcp", "kwargs": {"x": 0.0, "y": 0.0, "z": 300.0}}]
+
+Human: Move robot's TCP to (0.4, -0.2, 0.6) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": 400.0, "y": -200.0, "z": 600.0}}]
+
+Human: Obtain the status of robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate base for 90 degrees and move TCP along x axis for 50 millimeters
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [1.57]}}, {"function": "move_tcp", "kwargs": {"x": 50.0}}]
+
+Human: Rotate joint 4 by 60 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3], "angle": [1.05]}}]
+
+Human: Alter the fourth joint to 1.047 radians
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3], "angle": [1.05]}}]
+
+Human: Move TCP to (300, -100, 400) millimeters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 300.0, "y": -100.0, "z": 400.0}}]
+
+Human: Rotate joint 5 for -60 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [4], "angle": [-1.05]}}]
+
+Human: Rotate the joint number 3 by -45 degrees and joint number 4 by pi/6 radians
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [-0.79]}}, {"function": "move_joint", "kwargs": {"joint": [3], "angle": [0.52]}}]
+
+Human: Adjust the robot arm's joint 4 to an angle of -60 degrees.
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3], "angle": [-1.05]}}]
+
+Human: Move TCP to position (500, 300, 700) mm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": 300.0, "z": 700.0}}]
+
+Human: Move TCP towards positive z-axis for 0.5 meters.
+Robot: [{"function": "move_tcp", "kwargs": {"z": 500.0}}]
+
+Human: I need to know the current state of all robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Obtain a report on the status of all robot joints.
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Retrieve robot joints status
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: What are the current joint values of the robot?
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Provide me with the current joint positions of the robot
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Get the current status of robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate joint 3 by 90 degrees and move TCP along y-axis for 70mm
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [1.57]}}, {"function": "move_tcp", "kwargs": {"y": 70.0}}]
+
+Human: Change the orientation of joint 5 by 60 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [4], "angle": [1.05]}}]
+
+Human: Rotate joint 5 by 180 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [4], "angle": [3.14]}}]
+
+Human: Move the end-effector to a new position at (0.4, 0.7, 0.9) in millimeters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 0.4, "y": 0.7, "z": 0.9}}]
+
+Human: Alter the angle of joint 1 to pi/6 radians
+Robot: [{"function": "move_joint", "kwargs": {"joint": [1], "angle": [0.52]}}]
+
+Human: Rotate the second robot joint by 45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [1], "angle": [0.79]}}]
+
+Human: Move robot TCP along z axis for 300 millimeters
+Robot: [{"function": "move_tcp", "kwargs": {"z": 300.0}}]
+
+Human: Retrieve the current values of all robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move TCP to position (300, 600, 900) mm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 300.0, "y": 600.0, "z": 900.0}}]
+
+Human: Adjust TCP position to (0.1, -0.2, 0.5) meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 100.0, "y": -200.0, "z": 500.0}}]
+
+Human: Change the position of TCP to (150, -50, 300) millimeters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 150.0, "y": -50.0, "z": 300.0}}]
+
+Human: Move TCP to coordinates (0.5, 0.3, 0.7) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": 300.0, "z": 700.0}}]
+
+Human: Retrieve current positions and angles of robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move robot TCP to coordinates (0.5, 0.3, 0.7) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": 300.0, "z": 700.0}}]
+
+Human: Give me robot joints info
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Instruct the robot to move its TCP to (0.7, 0.5, 0.3) in meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 700.0, "y": 500.0, "z": 300.0}}]
+
+Human: Relocate the robot's TCP to (0.7, 0.5, 0.3) meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 700.0, "y": 500.0, "z": 300.0}}]
+
+Human: Move TCP along the x-axis for 100 millimeters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 100.0}}]
+
+Human: Rotate joint 1 by -90 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [-1.57]}}]
+
+Human: Shift the TCP 200 millimeters along the z-axis
+Robot: [{"function": "move_tcp", "kwargs": {"z": 200.0}}]
+
+Human: Check the current values of the robot's joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate the 6th joint by -30 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5], "angle": [-0.52]}}]
+
+Human: Get the current status of robot joints.
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate joint 4 for -pi/4 radians and joint 6 for pi/6 radians
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3, 5], "angle": [-0.79, 0.52]}}]
+
+Human: Move robot TCP along x-axis for 300mm and then along y-axis for 200mm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 300.0}}, {"function": "move_tcp", "kwargs": {"y": 200.0}}]
+
+Human: Move TCP to (0.1, 0.9, 0.5) in meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 100.0, "y": 900.0, "z": 500.0}}]
+
+Human: Adjust TCP to coordinates (0.2, -0.5, 0.9) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": 200.0, "y": -500.0, "z": 900.0}}]
+
+Human: Obtain the status of all robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate the sixth robot joint by -30 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5], "angle": [-0.52]}}]
+
+Human: Adjust robot TCP to (0.6, 0.5, 0.9) centimeters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 60.0, "y": 50.0, "z": 90.0}}]
+
+Human: I want you to rotate joint 2 for 30 and joint 7 for 45 degrees then joint 3 for pi/4
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2, 7], "angle": [0.52, 0.79]}}, {"function": "move_joint", "kwargs": {"joint": [3], "angle": [0.79]}}]
+
+Human: Get the current status of robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Adjust robot joints for a predefined task
+Robot: []
+
+Human: Get the current status of robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move robot TCP along x and y for 1000mm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 1000.0, "y": 1000.0}}]
+
+Human: Obtain information about the robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: I want to move the robot's TCP to (0.8, -0.2, 0.4) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": 800.0, "y": -200.0, "z": 400.0}}]
+
+Human: Adjust TCP position to (50, -20, 10) millimeters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 50.0, "y": -20.0, "z": 10.0}}]
+
+Human: Rotate the robot sixth joint for -30 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5], "angle": [-0.52]}}]
+
+Human: Rotate joint 2 by 30 degrees, joint 7 by 45 degrees, and joint 3 by pi/4
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2, 7, 3], "angle": [0.52, 0.79, 0.01]}}]
+
+Human: Rotate joint 4 by 90 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [3], "angle": [1.57]}}]
+
+Human: Move the robot TCP to (0.2, -0.1, 0.3) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": 200.0, "y": -100.0, "z": 300.0}}]
+
+Human: Rotate joint 3 for 60 degrees and joint 6 for pi/2
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [1.05]}}, {"function": "move_joint", "kwargs": {"joint": [5], "angle": [1.57]}}]
+
+Human: Can you provide the current joint status of the robot?
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move TCP along x-axis for 1000mm
+Robot: [{"function": "move_tcp", "kwargs": {"x": 1000.0}}]
+
+Human: Retrieve information about the current joint positions of the robotic arm.
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Can you guide me on how to perform a synchronized movement of multiple joints while moving the TCP in a specified direction?
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0, 1, 2, 3, 4, 5, 6], "angle": [0.79, 0.52, 1.05, 1.57, 2.09, 1.31, 0.26]}}, {"function": "move_tcp", "kwargs": {"x": 500.0, "y": 300.0, "z": 700.0}}]
+
+Human: Inquire about the current robot joint values
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move the end-effector to coordinates (0.3, 0.5, 0.8) in meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 300.0, "y": 500.0, "z": 800.0}}]
+
+Human: Move TCP to (0.4, 0.2, 0.6) m using mm as unit
+Robot: [{"function": "move_tcp", "kwargs": {"x": 400.0, "y": 200.0, "z": 600.0}}]
+
+Human: Move the robot TCP to position (500, 300, 700) micrometers
+Robot: [{"function": "move_tcp", "kwargs": {"x": 0.5, "y": 0.3, "z": 0.7}}]
+
+Human: Retrieve information about the robot's current joint positions.
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Ask for the current state of robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Get the current status of robot joints.
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Please rotate joint 2 by 30 degrees, joint 7 by 45 degrees, and joint 3 by pi/4 radians.
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2, 7], "angle": [0.52, 0.79]}}, {"function": "move_joint", "kwargs": {"joint": [3], "angle": [0.79]}}]
+
+Human: Get the current TCP position of the robot
+Robot: [{"function": "get_tcp_position", "kwargs": {}}]
+
+Human: Move TCP to (700, 500, 300) in millimeters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 700.0, "y": 500.0, "z": 300.0}}]
+
+Human: Move the robot TCP to coordinates (0.2, 0.8, 0.3) meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 200.0, "y": 800.0, "z": 300.0}}]
+
+Human: Rotate the third joint by 180 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [3.14]}}]
+
+Human: Move robot in y direction by 150 mm
+Robot: [{"function": "move_tcp", "kwargs": {"y": 150.0}}]
+
+Human: Rotate the robotic arm's base 90 degrees counterclockwise
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [-1.57]}}]
+
+Human: Rotate joint 1 for 45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [0.79]}}]
+
+Human: Adjust the third joint to 90 degrees and the sixth joint to -45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [1.57]}}, {"function": "move_joint", "kwargs": {"joint": [5], "angle": [-0.79]}}]
+
+Human: Rotate joint 3 by 60 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [1.05]}}]
+
+Human: Move the robot's TCP to coordinates (0.5, 0.3, 0.7) meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": 300.0, "z": 700.0}}]
+
+Human: Move robot TCP to coordinates (0.5, 0.3, 0.7) m
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": 300.0, "z": 700.0}}]
+
+Human: Adjust robot joint angles as per requirement
+Robot: []
+
+Human: Rotate joint 1 by 60 degrees and joint 5 by -45 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0, 4], "angle": [1.05, -0.79]}}]
+
+Human: Please rotate joint 5 by -60 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [4], "angle": [-1.05]}}]
+
+Human: Rotate the robot's base for 90 degrees and move the TCP along the y-axis for 100 millimeters.
+Robot: [{"function": "move_joint", "kwargs": {"joint": [0], "angle": [1.57]}}, {"function": "move_tcp", "kwargs": {"y": 100.0}}]
+
+Human: Retrieve the current status of all robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Obtain information about the robot's joint angles
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move the robot TCP 0.5 meters along the y-axis
+Robot: [{"function": "move_tcp", "kwargs": {"y": 500.0}}]
+
+Human: Get information on robot joint angles
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Retrieve current robot joint statuses
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate joint 3 by π/3 and joint 6 by -45 degrees.
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [1.05]}}, {"function": "move_joint", "kwargs": {"joint": [5], "angle": [-0.79]}}]
+
+Human: Rotate joint 2 by -30 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [2], "angle": [-0.52]}}]
+
+Human: Provide me with robot joint statuses
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Rotate the sixth joint by -30 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5], "angle": [-0.52]}}]
+
+Human: Rotate sixth joint by -60 degrees and move TCP along z axis for 1500 milimeters
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5], "angle": [-1.05]}}, {"function": "move_tcp", "kwargs": {"z": 1500.0}}]
+
+Human: Give me details about the robot's joint angles
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move robot TCP along x and y for 1000 millimeters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 1000.0, "y": 1000.0}}]
+
+Human: I need you to give me the robot joints information
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move the sixth joint of the robot by -30 degrees
+Robot: [{"function": "move_joint", "kwargs": {"joint": [5], "angle": [-0.52]}}]
+
+Human: Obtain the current status of all robot joints
+Robot: [{"function": "get_joint_values", "kwargs": {}}]
+
+Human: Move the robot's TCP to coordinates (0.5, 0.3, 0.7) meters
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": 300.0, "z": 700.0}}]
+
+Human: I want to move both x and y axes for a distance of 500 millimeters each.
+Robot: [{"function": "move_tcp", "kwargs": {"x": 500.0, "y": 500.0}}]
+

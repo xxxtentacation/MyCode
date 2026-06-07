@@ -1,0 +1,125 @@
+<mujoco model="ur5e_scene">
+  <compiler angle="radian" meshdir="meshes"/>
+
+  <option timestep="0.002" gravity="0 0 -9.81">
+    <flag contact="enable" gravity="enable"/>
+  </option>
+
+  <visual>
+    <global offwidth="800" offheight="600"/>
+  </visual>
+
+  <asset>
+    <texture type="skybox" builtin="gradient" rgb1="0.3 0.5 0.7" rgb2="0.1 0.2 0.3" width="512" height="512"/>
+  </asset>
+
+  <worldbody>
+    <light name="light" pos="1 1 2" dir="-0.5 -0.5 -1" diffuse="0.8 0.8 0.8"/>
+
+    <!-- Floor -->
+    <geom name="floor" type="plane" size="2 2 0.01" rgba="0.7 0.7 0.7 1"/>
+
+    <!-- Table -->
+    <body name="table" pos="0.5 -0.3 0">
+      <geom name="table_top" type="box" size="0.4 0.3 0.02" rgba="0.6 0.4 0.2 1"/>
+      <geom name="table_leg1" type="cylinder" size="0.015 0.35" pos="0.35 0.25 -0.37" rgba="0.5 0.3 0.1 1"/>
+      <geom name="table_leg2" type="cylinder" size="0.015 0.35" pos="0.35 -0.25 -0.37" rgba="0.5 0.3 0.1 1"/>
+      <geom name="table_leg3" type="cylinder" size="0.015 0.35" pos="-0.35 0.25 -0.37" rgba="0.5 0.3 0.1 1"/>
+      <geom name="table_leg4" type="cylinder" size="0.015 0.35" pos="-0.35 -0.25 -0.37" rgba="0.5 0.3 0.1 1"/>
+    </body>
+
+    <!-- Target object (block) -->
+    <body name="target_block" pos="0.5 -0.15 0.07">
+      <joint name="block_free" type="free" limited="false"/>
+      <geom name="block_geom" type="box" size="0.025 0.025 0.025" rgba="1 0.3 0.3 1" mass="0.05"/>
+    </body>
+
+    <!-- ============================================ -->
+    <!-- UR5 Arm (6 revolute joints)                  -->
+    <!-- Modified-DH chain: body pos relative to      -->
+    <!-- parent with zero joint angle + alpha quat    -->
+    <!-- ============================================ -->
+
+    <!-- Joint 1: base rotation (z-axis) -->
+    <body name="base" pos="0 0 0">
+      <geom name="base_geom" type="cylinder" size="0.07 0.089" pos="0 0 0.0445" rgba="0.3 0.3 0.35 1"/>
+      <joint name="shoulder_pan" type="hinge" axis="0 0 1" range="-6.283 6.283"/>
+
+      <!-- Joint 2: shoulder lift (alpha=pi/2) -->
+      <body name="shoulder" pos="0 0 0.089159" quat="0.7071 0.7071 0 0">
+        <geom name="shoulder_geom" type="cylinder" size="0.06 0.12" pos="0 0 0.06" rgba="0.35 0.35 0.4 1"/>
+        <joint name="shoulder_lift" type="hinge" axis="0 0 1" range="-6.283 6.283"/>
+
+        <!-- Joint 3: elbow (alpha=0) -->
+        <body name="upper_arm" pos="-0.425 0 0" quat="1 0 0 0">
+          <geom name="upper_arm_geom" type="cylinder" size="0.045 0.22" pos="-0.196 0 0" euler="0 1.57 0" rgba="0.4 0.4 0.45 1"/>
+          <joint name="elbow" type="hinge" axis="0 0 1" range="-6.283 6.283"/>
+
+          <!-- Joint 4: wrist 1 (alpha=pi/2) -->
+          <body name="forearm" pos="-0.39225 0 0" quat="1 0 0 0">
+            <geom name="forearm_geom" type="cylinder" size="0.035 0.18" pos="-0.18 0 0" euler="0 1.57 0" rgba="0.35 0.35 0.4 1"/>
+            <joint name="wrist1" type="hinge" axis="0 0 1" range="-6.283 6.283"/>
+
+            <!-- Joint 5: wrist 2 (alpha=pi/2) -->
+            <body name="wrist1_link" pos="0 0.10915 0" quat="0.7071 0.7071 0 0">
+              <geom name="wrist1_geom" type="cylinder" size="0.03 0.08" pos="0 0.04 0" euler="0 1.57 0" rgba="0.4 0.4 0.45 1"/>
+              <joint name="wrist2" type="hinge" axis="0 0 1" range="-6.283 6.283"/>
+
+              <!-- Joint 6: wrist 3 (alpha=-pi/2) -->
+              <body name="wrist2_link" pos="0 0.09465 0" quat="0.7071 -0.7071 0 0">
+                <geom name="wrist2_geom" type="cylinder" size="0.025 0.06" pos="0 0.03 0" euler="0 1.57 0" rgba="0.3 0.3 0.35 1"/>
+                <joint name="wrist3" type="hinge" axis="0 0 1" range="-6.283 6.283"/>
+
+                <!-- Flange + Gripper (alpha=0) -->
+                <body name="flange" pos="0 0.0823 0" quat="1 0 0 0">
+                  <geom name="flange_geom" type="cylinder" size="0.03 0.01" rgba="0.5 0.5 0.5 1"/>
+
+                  <!-- Robotiq 2F-85 Gripper -->
+                  <body name="gripper_base" pos="0 0 0.02">
+                    <geom name="gripper_body" type="box" size="0.015 0.04 0.025" rgba="0.3 0.3 0.3 1"/>
+
+                    <!-- Left finger -->
+                    <body name="left_finger" pos="0 0.02 0">
+                      <joint name="left_finger_joint" type="slide" axis="0 1 0" range="-0.04 0.0"/>
+                      <geom name="left_finger_pad" type="box" size="0.005 0.005 0.025" pos="0 -0.005 0" rgba="0.2 0.2 0.2 1"/>
+                      <site name="left_touch_site" type="box" size="0.005 0.005 0.025" pos="0 -0.005 0"/>
+                    </body>
+
+                    <!-- Right finger -->
+                    <body name="right_finger" pos="0 -0.02 0">
+                      <joint name="right_finger_joint" type="slide" axis="0 -1 0" range="-0.04 0.0"/>
+                      <geom name="right_finger_pad" type="box" size="0.005 0.005 0.025" pos="0 0.005 0" rgba="0.2 0.2 0.2 1"/>
+                      <site name="right_touch_site" type="box" size="0.005 0.005 0.025" pos="0 0.005 0"/>
+                    </body>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+
+    <!-- Camera sensor -->
+    <camera name="wrist_cam" mode="fixed" pos="0.5 0 1.5" xyaxes="1 0 0 0 1 0" fovy="45"/>
+
+  </worldbody>
+
+  <sensor>
+    <framepos name="ee_pos" objtype="body" objname="flange"/>
+    <framequat name="ee_quat" objtype="body" objname="flange"/>
+    <touch name="left_touch" site="left_touch_site"/>
+    <touch name="right_touch" site="right_touch_site"/>
+  </sensor>
+
+  <actuator>
+    <position name="j1_act" joint="shoulder_pan" kp="500" kv="40"/>
+    <position name="j2_act" joint="shoulder_lift" kp="500" kv="40"/>
+    <position name="j3_act" joint="elbow" kp="500" kv="40"/>
+    <position name="j4_act" joint="wrist1" kp="500" kv="40"/>
+    <position name="j5_act" joint="wrist2" kp="500" kv="40"/>
+    <position name="j6_act" joint="wrist3" kp="500" kv="40"/>
+    <position name="left_grip_act" joint="left_finger_joint" kp="200" kv="20"/>
+    <position name="right_grip_act" joint="right_finger_joint" kp="200" kv="20"/>
+  </actuator>
+</mujoco>

@@ -1,0 +1,862 @@
+[
+  {
+    "idx": 0,
+    "instruction": "Rotate joint 2 by 30 degrees, joint 7 by 45 degrees, and joint 3 by π/4 radians",
+    "expected": "[{\"function\": \"move_joint\", \"kwargs\": {\"joint\": [2, 7], \"angle\": [0.52, 0.79]}}, {\"function\": \"move_joint\", \"kwargs\": {\"joint\": [3], \"angle\": [0.79]}}]",
+    "generated": "[{\"function\": \"move_joint\", \"kwargs\": {\"joint\": [2, 7, 3], \"angle\": [0.52, 0.79, 0.01]}}]",
+    "json_valid": true,
+    "exact_match": false,
+    "func_match": true,
+    "func_overlap": 1.0,
+    "char_error_rate": 0.6357615894039735,
+    "expected_funcs": [
+      "move_joint"
+    ],
+    "generated_funcs": [
+      "move_joint"
+    ]
+  },
+  {
+    "idx": 1,
+    "instruction": "Fetch robot joint details",
+    "expected": "[{\"function\": \"get_joint_values\", \"kwargs\": {}}]",
+    "generated": "[{\"function\": \"get_joint_values\", \"kwargs\": {}}]",
+    "json_valid": true,
+    "exact_match": true,
+    "func_match": true,
+    "func_overlap": 1.0,
+    "char_error_rate": 0.0,
+    "expected_funcs": [
+      "get_joint_values"
+    ],
+    "generated_funcs": [
+      "get_joint_values"
+    ]
+  },
+  {
+    "idx": 2,
+    "instruction": "Rotate joint 2 for 30 degrees, joint 7 for 45 degrees, and joint 3 for π/4",
+    "expected": "[{\"function\": \"move_joint\", \"kwargs\": {\"joint\": [2, 7, 3], \"angle\": [0.52, 0.79, 0.01]}}]",
+    "generated": "[{\"function\": \"move_joint\", \"kwargs\": {\"joint\": [2, 7, 3], \"angle\": [0.52, 0.79, 0.01]}}]",
+    "json_valid": true,
+    "exact_match": true,
+    "func_match": true,
+    "func_overlap": 1.0,
+    "char_error_rate": 0.0,
+    "expected_funcs": [
+      "move_joint"
+    ],
+    "generated_funcs": [
+      "move_joint"
+    ]
+  },
+  {
+    "idx": 3,
+    "instruction": "Rotate the robot's base by 45 degrees and move the TCP along the x-axis for 50 millimeters",
+    "expected": "[{\"function\": \"move_joint\", \"kwargs\": {\"joint\": [0], \"angle\": [0.79]}}, {\"function\": \"move_tcp\", \"kwargs\": {\"x\": 50.0}}]",
+    "generated": "[{\"function\": \"move_joint\", \"kwargs\": {\"joint\": [0], \"angle\": [0.79]}}, {\"function\": \"move_tcp\", \"kwargs\": {\"x\": 50.0}}]",
+    "json_valid": true,
+    "exact_match": true,
+    "func_match": true,
+    "func_overlap": 1.0,
+    "char_error_rate": 0.0,
+    "expected_funcs": [
+      "move_tcp",
+      "move_joint"
+    ],
+    "generated_funcs": [
+      "move_tcp",
+      "move_joint"
+    ]
+  },
+  {
+    "idx": 4,
+    "instruction": "Move robot TCP to (0.7, 0.4, 0.8) meters and rotate joint 2 by 30 degrees",
+    "expected": "[{\"function\": \"move_tcp\", \"kwargs\": {\"x\": 700.0, \"y\": 400.0, \"z\": 800.0}}, {\"function\": \"move_joint\", \"kwargs\": {\"joint\": [1], \"angle\": [0.52]}}]",
+    "generated": "[{\"function\": \"move_tcp\", \"kwargs\": {\"x\": 700.0, \"y\": 400.0, \"z\": 800.0}}, {\"function\": \"move_joint\", \"kwargs\": {\"joint\": [3], \"angle\": [0.52]}}]",
+    "json_valid": true,
+    "exact_match": false,
+    "func_match": true,
+    "func_overlap": 1.0,
+    "char_error_rate": 0.006896551724137931,
+    "expected_funcs": [
+      "move_tcp",
+      "move_joint"
+    ],
+    "generated_funcs": [
+      "move_tcp",
+      "move_joint"
+    ]
+  },
+  {
+    "idx": 5,
+    "instruction": "Rotate the robot base by 45 degrees and move the TCP along the x-axis by 50 millimeters",
+    "expected": "[{\"function\": \"move_joint\", \"kwargs\": {\"joint\": [0], \"angle\": [0.79]}}, {\"function\": \"move_tcp\", \"kwargs\": {\"x\": 50.0}}]",
+    "generated": "[{\"function\": \"move_joint\", \"kwargs\": {\"joint\": [0], \"angle\": [0.79]}}, {\"function\": \"move_tcp\", \"kwargs\": {\"x\": 50.0}}]",
+    "json_valid": true,
+    "exact_match": true,
+    "func_match": true,
+    "func_overlap": 1.0,
+    "char_error_rate": 0.0,
+    "expected_funcs": [
+      "move_tcp",
+      "move_joint"
+    ],
+    "generated_funcs": [
+      "move_tcp",
+      "move_joint"
+    ]
+  },
+  {
+    "idx": 6,
+    "instruction": "Adjust TCP to position (0.4, 0.6, -0.2) m",
+    "expected": "[{\"function\": \"move_tcp\", \"kwargs\": {\"x\": 400.0, \"y\": 600.0, \"z\": -200.0}}]",
+    "generated": "[{\"function\": \"move_tcp\", \"kwargs\": {\"x\": 400.0, \"y\": 400.0, \"z\": 1200.0}}]",
+    "json_valid": true,
+    "exact_match": false,
+    "func_match": true,
+    "func_overlap": 1.0,
+    "char_error_rate": 0.02666666666666667,
+    "expected_funcs": [
+      "move_tcp"
+    ],
+    "generated_funcs": [
+      "move_tcp"
+    ]
+  },
+  {
+    "idx": 7,
+    "instruction": "Move robot along x, y, and z directions by 1000 mm",
+    "expected": "[{\"function\": \"move_tcp\", \"kwargs\": {\"x\": 1000.0, \"y\": 1000.0, \"z\": 1000.0}}]",
+    "generated": "[{\"function\": \"move_tcp\", \"kwargs\": {\"x\": 1000.0, \"y\": 1000.0}}]",
+    "json_valid": true,
+    "exact_match": false,
+    "func_match": true,
+    "func_overlap": 1.0,
+    "char_error_rate": 0.2077922077922078,
+    "expected_funcs": [
+      "move_tcp"
+    ],
+    "generated_funcs": [
+      "move_tcp"
+    ]
+  },
+  {
+    "idx": 8,
+    "instruction": "Move robot TCP to position (0.5, 0.3, 0.7) m",
+    "expected": "[{\"function\": \"move_tcp\", \"kwargs\": {\"x\": 500.0, \"y\": 300.0, \"z\": 700.0}}]",
+    "generated": "[{\"function\": \"move_tcp\", \"kwargs\": {\"x\": 500.0, \"y\": 300.0, \"z\": 700.0}}]",
+    "json_valid": true,
+    "exact_match": true,
+    "func_match": true,
+    "func_overlap": 1.0,
+    "char_error_rate": 0.0,
+    "expected_funcs": [
+      "move_tcp"
+    ],
+    "generated_funcs": [
+      "move_tcp"
+    ]
+  },
+  {
+    "idx": 9,
+    "instruction": "Rotate joint 5 for pi/4 and joint 7 for pi/3",
+    "expected": "[{\"function\": \"move_joint\", \"kwargs\": {\"joint\": [4, 6], \"angle\": [0.79, 1.05]}}]",
+    "generated": "[{\"function\": \"move_joint\", \"kwargs\": {\"joint\": [4, 5], \"angle\": [0.52, 0.79]}}, {\"function\": \"move_joint\", \"kwargs\": {\"joint\": [3], \"angle\": [0.79]}}]",
+    "json_valid": true,
+    "exact_match": false,
+    "func_match": true,
+    "func_overlap": 1.0,
+    "char_error_rate": 0.5165562913907285,
+    "expected_funcs": [
+      "move_joint"
+    ],
+    "generated_funcs": [
+      "move_joint"
+    ]
+  },
+  {
+    "idx": 10,
+    "instruction": "Rotate joint 5 by -30 degrees",
+    "expected": "[{\"function\": \"move_joint\", \"kwargs\": {\"joint\": [4], \"angle\": [-0.52]}}]",
+    "generated": "[{\"function\": \"move_joint\", \"kwargs\": {\"joint\": [4], \"angle\": [-0.52]}}]",
+    "json_valid": true,
+    "exact_match": true,
+    "func_match": true,
+    "func_overlap": 1.0,
+    "char_error_rate": 0.0,
+    "expected_funcs": [
+      "move_joint"
+    ],
+    "generated_funcs": [
+      "move_joint"
+    ]
+  },
+  {
+    "idx": 11,
+    "instruction": "Rotate the robot's base for -60 degrees and move TCP along the z-axis for 200 mm",
+    "expected": "[{\"function\": \"move_joint\", \"kwargs\": {\"joint\": [0], \"angle\": [-1.05]}}, {\"function\": \"move_tcp\", \"kwargs\": {\"z\": 200.0}}]",
+    "generated": "[{\"function\": \"move_joint\", \"kwargs\": {\"joint\": [0], \"angle\": [-1.05]}}, {\"function\": \"move_tcp\", \"kwargs\": {\"z\": 200.0}}]",
+    "json_valid": true,
+    "exact_match": true,
+    "func_match": true,
+    "func_overlap": 1.0,
+    "char_error_rate": 0.0,
+    "expected_funcs": [
+      "move_tcp",
+      "move_joint"
+    ],
+    "generated_funcs": [
+      "move_tcp",
+      "move_joint"
+    ]
+  },
+  {
+    "idx": 12,
+    "instruction": "Move TCP to coordinates (0.5, 0.3, 0.7) m",
+    "expected": "[{\"function\": \"move_tcp\", \"kwargs\": {\"x\": 500.0, \"y\": 300.0, \"z\": 700.0}}]",
+    "generated": "[{\"function\": \"move_tcp\", \"kwargs\": {\"x\": 500.0, \"y\": 300.0, \"z\": 700.0}}]",
+    "json_valid": true,
+    "exact_match": true,
+    "func_match": true,
+    "func_overlap": 1.0,
+    "char_error_rate": 0.0,
+    "expected_funcs": [
+      "move_tcp"
+    ],
+    "generated_funcs": [
+      "move_tcp"
+    ]
+  },
+  {
+    "idx": 13,
+    "instruction": "Relocate the end effector to (150, 250, 350) millimeters from its current location",
+    "expected": "[{\"function\": \"move_tcp\", \"kwargs\": {\"x\": 150.0, \"y\": 250.0, \"z\": 350.0}}]",
+    "generated": "[{\"function\": \"move_tcp\", \"kwargs\": {\"x\": 150.0, \"y\": 250.0, \"z\": 300.0}}]",
+    "json_valid": true,
+    "exact_match": false,
+    "func_match": true,
+    "func_overlap": 1.0,
+    "char_error_rate": 0.013513513513513514,
+    "expected_funcs": [
+      "move_tcp"
+    ],
+    "generated_funcs": [
+      "move_tcp"
+    ]
+  },
+  {
+    "idx": 14,
+    "instruction": "Move the robotic arm to position (100, -50, 200) cm",
+    "expected": "[{\"function\": \"move_tcp\", \"kwargs\": {\"x\": 10000.0, \"y\": -5000.0, \"z\": 20000.0}}]",
+    "generated": "[{\"function\": \"move_tcp\", \"kwargs\": {\"x\": 1000.0, \"y\": -50.0, \"z\": 200.0}}]",
+    "json_valid": true,
+    "exact_match": false,
+    "func_match": true,
+    "func_overlap": 1.0,
+    "char_error_rate": 0.4,
+    "expected_funcs": [
+      "move_tcp"
+    ],
+    "generated_funcs": [
+      "move_tcp"
+    ]
+  },
+  {
+    "idx": 15,
+    "instruction": "Retrieve robot joint statuses",
+    "expected": "[{\"function\": \"get_joint_values\", \"kwargs\": {}}]",
+    "generated": "[{\"function\": \"get_joint_values\", \"kwargs\": {}}]",
+    "json_valid": true,
+    "exact_match": true,
+    "func_match": true,
+    "func_overlap": 1.0,
+    "char_error_rate": 0.0,
+    "expected_funcs": [
+      "get_joint_values"
+    ],
+    "generated_funcs": [
+      "get_joint_values"
+    ]
+  },
+  {
+    "idx": 16,
+    "instruction": "Give me robot joints info",
+    "expected": "[{\"function\": \"get_joint_values\", \"kwargs\": {}}]",
+    "generated": "[{\"function\": \"get_joint_values\", \"kwargs\": {}}]",
+    "json_valid": true,
+    "exact_match": true,
+    "func_match": true,
+    "func_overlap": 1.0,
+    "char_error_rate": 0.0,
+    "expected_funcs": [
+      "get_joint_values"
+    ],
+    "generated_funcs": [
+      "get_joint_values"
+    ]
+  },
+  {
+    "idx": 17,
+    "instruction": "Obtain the values of all arm joints.",
+    "expected": "[{\"function\": \"get_joint_values\", \"kwargs\": {}}]",
+    "generated": "[{\"function\": \"get_joint_values\", \"kwargs\": {}}]",
+    "json_valid": true,
+    "exact_match": true,
+    "func_match": true,
+    "func_overlap": 1.0,
+    "char_error_rate": 0.0,
+    "expected_funcs": [
+      "get_joint_values"
+    ],
+    "generated_funcs": [
+      "get_joint_values"
+    ]
+  },
+  {
+    "idx": 18,
+    "instruction": "Rotate joint 4 for 60 degrees",
+    "expected": "[{\"function\": \"move_joint\", \"kwargs\": {\"joint\": [3], \"angle\": [1.05]}}]",
+    "generated": "[{\"function\": \"move_joint\", \"kwargs\": {\"joint\": [3], \"angle\": [1.05]}}]",
+    "json_valid": true,
+    "exact_match": true,
+    "func_match": true,
+    "func_overlap": 1.0,
+    "char_error_rate": 0.0,
+    "expected_funcs": [
+      "move_joint"
+    ],
+    "generated_funcs": [
+      "move_joint"
+    ]
+  },
+  {
+    "idx": 19,
+    "instruction": "Move robot tcp along x and y for 1000mm",
+    "expected": "[{\"function\": \"move_tcp\", \"kwargs\": {\"x\": 1000.0, \"y\": 1000.0}}]",
+    "generated": "[{\"function\": \"move_tcp\", \"kwargs\": {\"x\": 1000.0, \"y\": 1000.0}}]",
+    "json_valid": true,
+    "exact_match": true,
+    "func_match": true,
+    "func_overlap": 1.0,
+    "char_error_rate": 0.0,
+    "expected_funcs": [
+      "move_tcp"
+    ],
+    "generated_funcs": [
+      "move_tcp"
+    ]
+  },
+  {
+    "idx": 20,
+    "instruction": "Move the robot's end effector along the y-axis for a distance of 500 millimeters.",
+    "expected": "[{\"function\": \"move_tcp\", \"kwargs\": {\"y\": 500.0}}]",
+    "generated": "[{\"function\": \"move_tcp\", \"kwargs\": {\"y\": 500.0}}]",
+    "json_valid": true,
+    "exact_match": true,
+    "func_match": true,
+    "func_overlap": 1.0,
+    "char_error_rate": 0.0,
+    "expected_funcs": [
+      "move_tcp"
+    ],
+    "generated_funcs": [
+      "move_tcp"
+    ]
+  },
+  {
+    "idx": 21,
+    "instruction": "Retrieve the status of robot joints.",
+    "expected": "[{\"function\": \"get_joint_values\", \"kwargs\": {}}]",
+    "generated": "[{\"function\": \"get_joint_values\", \"kwargs\": {}}]",
+    "json_valid": true,
+    "exact_match": true,
+    "func_match": true,
+    "func_overlap": 1.0,
+    "char_error_rate": 0.0,
+    "expected_funcs": [
+      "get_joint_values"
+    ],
+    "generated_funcs": [
+      "get_joint_values"
+    ]
+  },
+  {
+    "idx": 22,
+    "instruction": "Move TCP to (0.3, -0.7, 0.6) in meters",
+    "expected": "[{\"function\": \"move_tcp\", \"kwargs\": {\"x\": 300.0, \"y\": -700.0, \"z\": 600.0}}]",
+    "generated": "[{\"function\": \"move_tcp\", \"kwargs\": {\"x\": 300.0, \"y\": -700.0, \"z\": 600.0}}]",
+    "json_valid": true,
+    "exact_match": true,
+    "func_match": true,
+    "func_overlap": 1.0,
+    "char_error_rate": 0.0,
+    "expected_funcs": [
+      "move_tcp"
+    ],
+    "generated_funcs": [
+      "move_tcp"
+    ]
+  },
+  {
+    "idx": 23,
+    "instruction": "Rotate joint 1 by 60 degrees and joint 4 by -45 degrees",
+    "expected": "[{\"function\": \"move_joint\", \"kwargs\": {\"joint\": [0, 3], \"angle\": [1.05, -0.79]}}]",
+    "generated": "[{\"function\": \"move_joint\", \"kwargs\": {\"joint\": [3, 5], \"angle\": [1.05, -0.79]}}]",
+    "json_valid": true,
+    "exact_match": false,
+    "func_match": true,
+    "func_overlap": 1.0,
+    "char_error_rate": 0.024691358024691357,
+    "expected_funcs": [
+      "move_joint"
+    ],
+    "generated_funcs": [
+      "move_joint"
+    ]
+  },
+  {
+    "idx": 24,
+    "instruction": "Move the robot's end effector to (0.6, 0.4, 0.8) in meters",
+    "expected": "[{\"function\": \"move_tcp\", \"kwargs\": {\"x\": 600.0, \"y\": 400.0, \"z\": 800.0}}]",
+    "generated": "[{\"function\": \"move_tcp\", \"kwargs\": {\"x\": 600.0, \"y\": 400.0, \"z\": 800.0}}]",
+    "json_valid": true,
+    "exact_match": true,
+    "func_match": true,
+    "func_overlap": 1.0,
+    "char_error_rate": 0.0,
+    "expected_funcs": [
+      "move_tcp"
+    ],
+    "generated_funcs": [
+      "move_tcp"
+    ]
+  },
+  {
+    "idx": 25,
+    "instruction": "Rotate joint 2 by 45 degrees",
+    "expected": "[{\"function\": \"move_joint\", \"kwargs\": {\"joint\": [2], \"angle\": [0.79]}}]",
+    "generated": "[{\"function\": \"move_joint\", \"kwargs\": {\"joint\": [2], \"angle\": [0.79]}}]",
+    "json_valid": true,
+    "exact_match": true,
+    "func_match": true,
+    "func_overlap": 1.0,
+    "char_error_rate": 0.0,
+    "expected_funcs": [
+      "move_joint"
+    ],
+    "generated_funcs": [
+      "move_joint"
+    ]
+  },
+  {
+    "idx": 26,
+    "instruction": "Move the robot TCP to (0.7, 0.5, 0.9) meters.",
+    "expected": "[{\"function\": \"move_tcp\", \"kwargs\": {\"x\": 700.0, \"y\": 500.0, \"z\": 900.0}}]",
+    "generated": "[{\"function\": \"move_tcp\", \"kwargs\": {\"x\": 700.0, \"y\": 500.0, \"z\": 500.0}}]",
+    "json_valid": true,
+    "exact_match": false,
+    "func_match": true,
+    "func_overlap": 1.0,
+    "char_error_rate": 0.013513513513513514,
+    "expected_funcs": [
+      "move_tcp"
+    ],
+    "generated_funcs": [
+      "move_tcp"
+    ]
+  },
+  {
+    "idx": 27,
+    "instruction": "Inquire about the current robot joints status",
+    "expected": "[{\"function\": \"get_joint_values\", \"kwargs\": {}}]",
+    "generated": "[{\"function\": \"get_joint_values\", \"kwargs\": {}}]",
+    "json_valid": true,
+    "exact_match": true,
+    "func_match": true,
+    "func_overlap": 1.0,
+    "char_error_rate": 0.0,
+    "expected_funcs": [
+      "get_joint_values"
+    ],
+    "generated_funcs": [
+      "get_joint_values"
+    ]
+  },
+  {
+    "idx": 28,
+    "instruction": "Move TCP along the x and y axes for 1000 millimeters",
+    "expected": "[{\"function\": \"move_tcp\", \"kwargs\": {\"x\": 1000.0, \"y\": 1000.0}}]",
+    "generated": "[{\"function\": \"move_tcp\", \"kwargs\": {\"x\": 1000.0, \"y\": 1000.0}}]",
+    "json_valid": true,
+    "exact_match": true,
+    "func_match": true,
+    "func_overlap": 1.0,
+    "char_error_rate": 0.0,
+    "expected_funcs": [
+      "move_tcp"
+    ],
+    "generated_funcs": [
+      "move_tcp"
+    ]
+  },
+  {
+    "idx": 29,
+    "instruction": "Transmit robot TCP to (0.7, 0.4, 0.5) m",
+    "expected": "[{\"function\": \"move_tcp\", \"kwargs\": {\"x\": 700.0, \"y\": 400.0, \"z\": 500.0}}]",
+    "generated": "[{\"function\": \"move_tcp\", \"kwargs\": {\"x\": 700.0, \"y\": 400.0, \"z\": 500.0}}]",
+    "json_valid": true,
+    "exact_match": true,
+    "func_match": true,
+    "func_overlap": 1.0,
+    "char_error_rate": 0.0,
+    "expected_funcs": [
+      "move_tcp"
+    ],
+    "generated_funcs": [
+      "move_tcp"
+    ]
+  },
+  {
+    "idx": 30,
+    "instruction": "Increase the angle of joint 4 by 30 degrees",
+    "expected": "[{\"function\": \"move_joint\", \"kwargs\": {\"joint\": [3], \"angle\": [0.52]}}]",
+    "generated": "[{\"function\": \"move_joint\", \"kwargs\": {\"joint\": [3], \"angle\": [0.52]}}]",
+    "json_valid": true,
+    "exact_match": true,
+    "func_match": true,
+    "func_overlap": 1.0,
+    "char_error_rate": 0.0,
+    "expected_funcs": [
+      "move_joint"
+    ],
+    "generated_funcs": [
+      "move_joint"
+    ]
+  },
+  {
+    "idx": 31,
+    "instruction": "Retrieve data on the current status of the robot's end-effector",
+    "expected": "[{\"function\": \"get_joint_values\", \"kwargs\": {}}]",
+    "generated": "[{\"function\": \"get_joint_values\", \"kwargs\": {}}]",
+    "json_valid": true,
+    "exact_match": true,
+    "func_match": true,
+    "func_overlap": 1.0,
+    "char_error_rate": 0.0,
+    "expected_funcs": [
+      "get_joint_values"
+    ],
+    "generated_funcs": [
+      "get_joint_values"
+    ]
+  },
+  {
+    "idx": 32,
+    "instruction": "Rotate joint 6 by -30 degrees",
+    "expected": "[{\"function\": \"move_joint\", \"kwargs\": {\"joint\": [5], \"angle\": [-0.52]}}]",
+    "generated": "[{\"function\": \"move_joint\", \"kwargs\": {\"joint\": [5], \"angle\": [-0.52]}}]",
+    "json_valid": true,
+    "exact_match": true,
+    "func_match": true,
+    "func_overlap": 1.0,
+    "char_error_rate": 0.0,
+    "expected_funcs": [
+      "move_joint"
+    ],
+    "generated_funcs": [
+      "move_joint"
+    ]
+  },
+  {
+    "idx": 33,
+    "instruction": "Inquire about the current positions of all robot joints",
+    "expected": "[{\"function\": \"get_joint_values\", \"kwargs\": {}}]",
+    "generated": "[{\"function\": \"get_joint_values\", \"kwargs\": {}}]",
+    "json_valid": true,
+    "exact_match": true,
+    "func_match": true,
+    "func_overlap": 1.0,
+    "char_error_rate": 0.0,
+    "expected_funcs": [
+      "get_joint_values"
+    ],
+    "generated_funcs": [
+      "get_joint_values"
+    ]
+  },
+  {
+    "idx": 34,
+    "instruction": "Retrieve joint positions of the robotic arm",
+    "expected": "[{\"function\": \"get_joint_values\", \"kwargs\": {}}]",
+    "generated": "[{\"function\": \"get_joint_values\", \"kwargs\": {}}]",
+    "json_valid": true,
+    "exact_match": true,
+    "func_match": true,
+    "func_overlap": 1.0,
+    "char_error_rate": 0.0,
+    "expected_funcs": [
+      "get_joint_values"
+    ],
+    "generated_funcs": [
+      "get_joint_values"
+    ]
+  },
+  {
+    "idx": 35,
+    "instruction": "Move robot TCP to coordinates (0.5, 0.3, 0.7) m",
+    "expected": "[{\"function\": \"move_tcp\", \"kwargs\": {\"x\": 500.0, \"y\": 300.0, \"z\": 700.0}}]",
+    "generated": "[{\"function\": \"move_tcp\", \"kwargs\": {\"x\": 500.0, \"y\": 300.0, \"z\": 700.0}}]",
+    "json_valid": true,
+    "exact_match": true,
+    "func_match": true,
+    "func_overlap": 1.0,
+    "char_error_rate": 0.0,
+    "expected_funcs": [
+      "move_tcp"
+    ],
+    "generated_funcs": [
+      "move_tcp"
+    ]
+  },
+  {
+    "idx": 36,
+    "instruction": "Check current status of robot joints",
+    "expected": "[{\"function\": \"get_joint_values\", \"kwargs\": {}}]",
+    "generated": "[{\"function\": \"get_joint_values\", \"kwargs\": {}}]",
+    "json_valid": true,
+    "exact_match": true,
+    "func_match": true,
+    "func_overlap": 1.0,
+    "char_error_rate": 0.0,
+    "expected_funcs": [
+      "get_joint_values"
+    ],
+    "generated_funcs": [
+      "get_joint_values"
+    ]
+  },
+  {
+    "idx": 37,
+    "instruction": "Move robot sixth joint for -30 degrees",
+    "expected": "[{\"function\": \"move_joint\", \"kwargs\": {\"joint\": [5], \"angle\": [-0.52]}}]",
+    "generated": "[{\"function\": \"move_joint\", \"kwargs\": {\"joint\": [5], \"angle\": [-0.52]}}]",
+    "json_valid": true,
+    "exact_match": true,
+    "func_match": true,
+    "func_overlap": 1.0,
+    "char_error_rate": 0.0,
+    "expected_funcs": [
+      "move_joint"
+    ],
+    "generated_funcs": [
+      "move_joint"
+    ]
+  },
+  {
+    "idx": 38,
+    "instruction": "Give me information about the robot's current joint values",
+    "expected": "[{\"function\": \"get_joint_values\", \"kwargs\": {}}]",
+    "generated": "[{\"function\": \"get_joint_values\", \"kwargs\": {}}]",
+    "json_valid": true,
+    "exact_match": true,
+    "func_match": true,
+    "func_overlap": 1.0,
+    "char_error_rate": 0.0,
+    "expected_funcs": [
+      "get_joint_values"
+    ],
+    "generated_funcs": [
+      "get_joint_values"
+    ]
+  },
+  {
+    "idx": 39,
+    "instruction": "Command the robot to change TCP position to (0.1, 0.8, -0.5) m",
+    "expected": "[{\"function\": \"move_tcp\", \"kwargs\": {\"x\": 100.0, \"y\": 800.0, \"z\": -500.0}}]",
+    "generated": "[{\"function\": \"move_tcp\", \"kwargs\": {\"x\": 100.0, \"y\": -200.0, \"z\": 500.0}}]",
+    "json_valid": true,
+    "exact_match": false,
+    "func_match": true,
+    "func_overlap": 1.0,
+    "char_error_rate": 0.16,
+    "expected_funcs": [
+      "move_tcp"
+    ],
+    "generated_funcs": [
+      "move_tcp"
+    ]
+  },
+  {
+    "idx": 40,
+    "instruction": "Fetch the current state of the robot joints",
+    "expected": "[{\"function\": \"get_joint_values\", \"kwargs\": {}}]",
+    "generated": "[{\"function\": \"get_joint_values\", \"kwargs\": {}}]",
+    "json_valid": true,
+    "exact_match": true,
+    "func_match": true,
+    "func_overlap": 1.0,
+    "char_error_rate": 0.0,
+    "expected_funcs": [
+      "get_joint_values"
+    ],
+    "generated_funcs": [
+      "get_joint_values"
+    ]
+  },
+  {
+    "idx": 41,
+    "instruction": "Move robot to position 0.5 meters along the x-axis and 0.3 meters along the y-axis",
+    "expected": "[{\"function\": \"move_tcp\", \"kwargs\": {\"x\": 500.0, \"y\": 300.0}}]",
+    "generated": "[{\"function\": \"move_tcp\", \"kwargs\": {\"x\": 500.0, \"y\": 300.0}}]",
+    "json_valid": true,
+    "exact_match": true,
+    "func_match": true,
+    "func_overlap": 1.0,
+    "char_error_rate": 0.0,
+    "expected_funcs": [
+      "move_tcp"
+    ],
+    "generated_funcs": [
+      "move_tcp"
+    ]
+  },
+  {
+    "idx": 42,
+    "instruction": "Retrieve robot joint values",
+    "expected": "[{\"function\": \"get_joint_values\", \"kwargs\": {}}]",
+    "generated": "[{\"function\": \"get_joint_values\", \"kwargs\": {}}]",
+    "json_valid": true,
+    "exact_match": true,
+    "func_match": true,
+    "func_overlap": 1.0,
+    "char_error_rate": 0.0,
+    "expected_funcs": [
+      "get_joint_values"
+    ],
+    "generated_funcs": [
+      "get_joint_values"
+    ]
+  },
+  {
+    "idx": 43,
+    "instruction": "Display current position of robot joints",
+    "expected": "[{\"function\": \"get_joint_values\", \"kwargs\": {}}]",
+    "generated": "[{\"function\": \"get_joint_values\", \"kwargs\": {}}]",
+    "json_valid": true,
+    "exact_match": true,
+    "func_match": true,
+    "func_overlap": 1.0,
+    "char_error_rate": 0.0,
+    "expected_funcs": [
+      "get_joint_values"
+    ],
+    "generated_funcs": [
+      "get_joint_values"
+    ]
+  },
+  {
+    "idx": 44,
+    "instruction": "Provide me with the current status of robot joints",
+    "expected": "[{\"function\": \"get_joint_values\", \"kwargs\": {}}]",
+    "generated": "[{\"function\": \"get_joint_values\", \"kwargs\": {}}]",
+    "json_valid": true,
+    "exact_match": true,
+    "func_match": true,
+    "func_overlap": 1.0,
+    "char_error_rate": 0.0,
+    "expected_funcs": [
+      "get_joint_values"
+    ],
+    "generated_funcs": [
+      "get_joint_values"
+    ]
+  },
+  {
+    "idx": 45,
+    "instruction": "Rotate joint 2 by 45 degrees and move TCP along z-axis for 30mm",
+    "expected": "[{\"function\": \"move_joint\", \"kwargs\": {\"joint\": [2], \"angle\": [0.79]}}, {\"function\": \"move_tcp\", \"kwargs\": {\"z\": 30.0}}]",
+    "generated": "[{\"function\": \"move_joint\", \"kwargs\": {\"joint\": [2], \"angle\": [0.79]}}, {\"function\": \"move_tcp\", \"kwargs\": {\"z\": 30.0}}]",
+    "json_valid": true,
+    "exact_match": true,
+    "func_match": true,
+    "func_overlap": 1.0,
+    "char_error_rate": 0.0,
+    "expected_funcs": [
+      "move_tcp",
+      "move_joint"
+    ],
+    "generated_funcs": [
+      "move_tcp",
+      "move_joint"
+    ]
+  },
+  {
+    "idx": 46,
+    "instruction": "I need to move the robot TCP along the z-axis for a distance of 300 millimeters.",
+    "expected": "[{\"function\": \"move_tcp\", \"kwargs\": {\"z\": 300.0}}]",
+    "generated": "[{\"function\": \"move_tcp\", \"kwargs\": {\"z\": 300.0}}]",
+    "json_valid": true,
+    "exact_match": true,
+    "func_match": true,
+    "func_overlap": 1.0,
+    "char_error_rate": 0.0,
+    "expected_funcs": [
+      "move_tcp"
+    ],
+    "generated_funcs": [
+      "move_tcp"
+    ]
+  },
+  {
+    "idx": 47,
+    "instruction": "Rotate robot sixth joint by -30 degrees",
+    "expected": "[{\"function\": \"move_joint\", \"kwargs\": {\"joint\": [5], \"angle\": [-0.52]}}]",
+    "generated": "[{\"function\": \"move_joint\", \"kwargs\": {\"joint\": [5], \"angle\": [-0.52]}}]",
+    "json_valid": true,
+    "exact_match": true,
+    "func_match": true,
+    "func_overlap": 1.0,
+    "char_error_rate": 0.0,
+    "expected_funcs": [
+      "move_joint"
+    ],
+    "generated_funcs": [
+      "move_joint"
+    ]
+  },
+  {
+    "idx": 48,
+    "instruction": "Retrieve the current configuration of all robot joints",
+    "expected": "[{\"function\": \"get_joint_values\", \"kwargs\": {}}]",
+    "generated": "[{\"function\": \"get_joint_values\", \"kwargs\": {}}]",
+    "json_valid": true,
+    "exact_match": true,
+    "func_match": true,
+    "func_overlap": 1.0,
+    "char_error_rate": 0.0,
+    "expected_funcs": [
+      "get_joint_values"
+    ],
+    "generated_funcs": [
+      "get_joint_values"
+    ]
+  },
+  {
+    "idx": 49,
+    "instruction": "Request joint status for diagnostics",
+    "expected": "[{\"function\": \"get_joint_values\", \"kwargs\": {}}]",
+    "generated": "[{\"function\": \"get_joint_values\", \"kwargs\": {}}]",
+    "json_valid": true,
+    "exact_match": true,
+    "func_match": true,
+    "func_overlap": 1.0,
+    "char_error_rate": 0.0,
+    "expected_funcs": [
+      "get_joint_values"
+    ],
+    "generated_funcs": [
+      "get_joint_values"
+    ]
+  }
+]
