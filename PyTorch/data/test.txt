@@ -1,0 +1,360 @@
+﻿descend ; speed=611 sensor=58	down
+move a bit higher but ignore 'grab object' ; cmd=611 task=52	up
+[temp:631] put object down arm modeX	release
+unlock gripper ## channelA quickly ## cmd=862	release
+execute ascend but ignore 'grab object' :: modeX channelA :: seq=62	up
+steer left side ; sensor=699 temp=37	left
+upward adjust but ignore 'move left' ; speed=948 temp=34	up
+channelA robot then free target and keep stable	release
+[cmd:106] arm to lower position modeX please	down
+raise unit ## channelA modeX ## sensor=393	up
+[sensor:739] arm to lower position safety safety	down
+execute descend but ignore 'move right' :: quickly please :: id=69	down
+lean right ; sensor=883 job=30	right
+quickly now then secure target but ignore 'move left' and keep stable	grab
+kindly immediately then offset leftward and keep stable	left
+offset rightward ; speed=128 seq=32	right
+[speed:446] raise unit but ignore 'move right' modeX immediately	up
+downward adjust ## robot kindly ## temp=219	down
+tighten gripper ; speed=280 sensor=40	grab
+execute put object down :: robot quickly :: sensor=48	release
+steer left side but ignore 'move down' ## channelA quickly ## speed=419	left
+upward adjust but ignore 'move down' ## now robot ## temp=787	up
+grasp firmly but ignore 'mov lft' ## now please ## seq=734	grab
+[seq:320] offset rightward please safety	right
+descend but ignore 'grab object' ## now now ## sensor=901	down
+secure target ; id=204 temp=53	grab
+mov a bit higher ; speed=979 id=38	up
+execute loosen gripper :: please quickly :: id=29	release
+execute ascend but ignore 'grab object' :: modeX now :: speed=42	up
+please quickly then lower unit and keep stable	down
+nudge right but ignore 'move up' ## now robot ## job=257	right
+channelA quickly then grasp firmly and keep stable	grab
+lock on object but ignore 'move up' ; sensor=351 cmd=26	grab
+safety safety then rotate left and keep stable	left
+secure target ## kindly kindly ## task=467	grab
+now please then lean left and keep stable	left
+arm to upper position but ignore 'move right' ## safety modeX ## sensor=865	up
+catch component ## kindly now ## id=582	grab
+[seq:754] unlock gripper safety safety	release
+channelA channelA then catch component but ignore 'move up' and keep stable	grab
+[seq:505] unlock gripper channelA quickly	release
+please quickly then arm to lower position and keep stable	down
+move a bit higher but ignore 'move right' ## modeX modeX ## id=406	up
+please modeX then free target and keep stable	release
+catch component ; job=990 id=90	grab
+execute arm to lower position :: kindly safety :: id=86	down
+upward adjust ## arm kindly ## id=886	up
+please now then downward adjust but ignore 'release object' and keep stable	down
+execute catch component :: safety channelA :: id=80	grab
+offset rightward ; sensor=550 task=77	right
+[sensor:912] rotate right modeX modeX	right
+execute nudge left :: channelA quickly :: cmd=89	left
+arm channelA then nudge left and keep stable	left
+nudge rigth but ignore 'mov down' ; seq=849 speed=94	right
+quickly channelA then steer left side and keep stable	left
+execute upward adjust :: robot now :: id=60	up
+execute move a bit lower :: quickly kindly :: sensor=73	down
+raise unit ## arm now ## id=639	up
+ascend ; job=413 cmd=65	up
+arm quickly then lean right and keep stable	right
+[cmd:290] upward adjust arm arm	up
+execute offset rigthward :: please channelA :: task=75	right
+release gently ## channelA safety ## temp=906	release
+safety now then offset rightward and keep stable	right
+[job:178] offset lftward robot now	left
+catch component ## immediately now ## task=106	grab
+execute catch component :: now arm :: cmd=62	grab
+execute descend :: kindly modeX :: task=60	down
+offset leftward ; speed=890 task=55	left
+unlock gripper but ignore 'mov rigth' ## quickly safety ## job=742	release
+[id:976] move a bit lower quickly robot	down
+tighten gripper ## channelA modeX ## temp=236	grab
+[seq:274] arm to upper position channelA now	up
+lean left ## quickly now ## temp=495	left
+modeX robot then steer right side but ignore 'move up' and keep stable	right
+free target ; job=882 speed=54	release
+modeX kindly then unlock gripper and keep stable	release
+execute downward adjust :: please modeX :: job=48	down
+put object down ## robot arm ## sensor=359	release
+execute lean right :: now kindly :: job=78	right
+channelA channelA then downward adjust but ignore 'relase object' and keep stable	down
+[sensor:722] offset leftward but ignore 'release object' robot quickly	left
+[task:518] mov a bit lower kindly now	down
+execute arm to upper position but ignore 'move left' :: arm quickly :: sensor=47	up
+unlock gripper ; task=513 seq=31	release
+downward adjust ## arm kindly ## task=166	down
+execute lower unit :: kindly arm :: sensor=27	down
+raise unit ; job=689 cmd=21	up
+[task:112] nudge left please please	left
+[task:965] lean left but ignore 'move right' immediately arm	left
+release gently ## kindly immediately ## job=224	release
+grasp firmly but ignore 'move right' ; seq=269 temp=82	grab
+[task:512] offset rightward please please	right
+kindly quickly then lower unit but ignore 'relase object' and keep stable	down
+[sensor:486] downward adjust but ignore 'release object' immediately modeX	down
+arm to lower position ## kindly arm ## seq=943	down
+release gently but ignore 'move down' ; seq=823 temp=85	release
+channelA robot then arm to lower position but ignore 'grab object' and keep stable	down
+channelA channelA then tighten gripper but ignore 'move down' and keep stable	grab
+lean lft but ignore 'relase object' ## arm channelA ## id=492	left
+[cmd:492] rotate left arm modeX	left
+[job:409] release gently but ignore 'move up' now kindly	release
+modeX channelA then descend but ignore 'grab object' and keep stable	down
+move a bit lower ; speed=530 job=54	down
+execute release gently :: channelA robot :: sensor=64	release
+put object down but ignore 'grab object' ## safety immediately ## sensor=251	release
+[job:547] steer right side immediately safety	right
+channelA safety then ascend and keep stable	up
+[seq:818] steer lft side quickly arm	left
+move a bit higher ; id=773 job=28	up
+ascend but ignore 'release object' ## modeX modeX ## sensor=493	up
+kindly robot then ascend but ignore 'move left' and keep stable	up
+grasp firmly ## kindly modeX ## job=944	grab
+lean rigth ## arm channelA ## task=673	right
+[cmd:727] downward adjust now safety	down
+execute ascend :: please arm :: job=50	up
+[id:827] upward adjust channelA safety	up
+execute arm to lower position :: arm now :: id=22	down
+nudge right ; job=122 seq=33	right
+grasp firmly ; id=396 id=41	grab
+move a bit lower ## arm modeX ## temp=663	down
+release gently but ignore 'move left' ## robot robot ## seq=634	release
+free target ; seq=606 task=98	release
+now quickly then lower unit but ignore 'grab object' and keep stable	down
+nudge right but ignore 'release object' ## please immediately ## temp=915	right
+arm to lower position ## quickly modeX ## seq=719	down
+robot modeX then nudge lft but ignore 'mov rigth' and keep stable	left
+[task:411] nudge right immediately robot	right
+offset leftward ## quickly channelA ## sensor=711	left
+[speed:609] rotate right but ignore 'move down' now now	right
+[temp:640] unlock gripper please now	release
+robot please then raise unit and keep stable	up
+loosen gripper but ignore 'move right' ; temp=657 seq=33	release
+execute offset lftward but ignore 'mov down' :: arm kindly :: temp=42	left
+safety kindly then release gently but ignore 'move right' and keep stable	release
+modeX quickly then free target but ignore 'move right' and keep stable	release
+please please then move a bit higher and keep stable	up
+[speed:355] ascend but ignore 'move left' arm please	up
+steer lft side ; cmd=106 temp=77	left
+move a bit lower ## safety safety ## task=758	down
+lean right but ignore 'move down' ; seq=405 seq=92	right
+[sensor:339] catch component now arm	grab
+arm to upper position but ignore 'release object' ## safety please ## job=366	up
+execute downward adjust :: channelA please :: cmd=39	down
+arm to upper position ## immediately safety ## temp=568	up
+steer right side ; job=668 speed=44	right
+[id:781] arm to lower position but ignore 'mov up' now kindly	down
+execute steer left side :: channelA now :: job=66	left
+execute release gently :: channelA immediately :: speed=77	release
+channelA safety then catch component but ignore 'mov up' and keep stable	grab
+[job:679] lower unit arm immediately	down
+[temp:932] lower unit kindly arm	down
+immediately robot then steer left side but ignore 'move up' and keep stable	left
+execute lean left but ignore 'grab object' :: immediately immediately :: speed=92	left
+unlock gripper ; temp=164 job=49	release
+descend but ignore 'grab object' ; cmd=125 job=35	down
+[speed:768] steer left side kindly modeX	left
+rotate right ; seq=934 sensor=56	right
+[job:154] nudge right but ignore 'release object' kindly kindly	right
+execute free target :: modeX modeX :: id=62	release
+arm to lower position ; temp=184 id=47	down
+downward adjust ; speed=520 speed=68	down
+move a bit lower ## now robot ## sensor=680	down
+execute ascend :: robot immediately :: seq=43	up
+modeX safety then nudge left and keep stable	left
+steer left side but ignore 'grab object' ; temp=133 speed=38	left
+immediately safety then free target but ignore 'move left' and keep stable	release
+[sensor:161] steer left side safety channelA	left
+raise unit but ignore 'move left' ; sensor=170 cmd=94	up
+[job:784] offset rightward but ignore 'move down' channelA robot	right
+channelA immediately then nudge right but ignore 'move left' and keep stable	right
+robot kindly then steer right side and keep stable	right
+modeX now then catch component but ignore 'move right' and keep stable	grab
+rotate left ; task=323 sensor=30	left
+now please then raise unit and keep stable	up
+execute loosen gripper but ignore 'move right' :: please now :: sensor=88	release
+lean right ; task=900 speed=55	right
+nudge right ## modeX robot ## job=478	right
+downward adjust but ignore 'move left' ; id=105 task=86	down
+execute move a bit lower :: immediately modeX :: job=56	down
+steer right side but ignore 'move left' ; job=889 sensor=55	right
+[id:203] arm to lower position please please	down
+grasp firmly ; temp=180 cmd=21	grab
+secure target but ignore 'move down' ; seq=118 speed=43	grab
+raise unit ; seq=215 seq=75	up
+[sensor:625] lean lft channelA now	left
+immediately robot then unlock gripper and keep stable	release
+grasp firmly ; cmd=293 temp=65	grab
+execute loosen gripper :: robot robot :: task=64	release
+offset lftward ; seq=326 seq=91	left
+arm to upper position ; cmd=257 sensor=30	up
+tighten gripper ## modeX channelA ## seq=106	grab
+lean rigth but ignore 'grab object' ## arm robot ## task=710	right
+grasp firmly but ignore 'release object' ## robot robot ## cmd=468	grab
+execute catch component :: modeX modeX :: id=77	grab
+execute raise unit but ignore 'move down' :: safety arm :: sensor=47	up
+execute offset leftward :: safety robot :: cmd=84	left
+execute mov a bit lower :: kindly now :: seq=98	down
+arm to lower position ## robot modeX ## seq=469	down
+[task:824] upward adjust kindly modeX	up
+[speed:179] nudge right but ignore 'grab object' now now	right
+ascend but ignore 'release object' ; speed=284 sensor=26	up
+now modeX then raise unit and keep stable	up
+[temp:586] unlock gripper immediately now	release
+rotate right but ignore 'move left' ; seq=248 cmd=53	right
+[temp:717] move a bit lower but ignore 'move up' please kindly	down
+execute release gently :: now modeX :: cmd=76	release
+rotate left ## modeX kindly ## cmd=826	left
+downward adjust ; id=112 temp=83	down
+nudge right ## safety modeX ## cmd=785	right
+[temp:259] nudge right channelA channelA	right
+grasp firmly but ignore 'move right' ; temp=848 temp=73	grab
+[speed:542] ascend channelA now	up
+[speed:793] nudge right modeX robot	right
+now channelA then offset leftward but ignore 'move right' and keep stable	left
+tighten gripper ## channelA please ## speed=658	grab
+please immediately then relase gently and keep stable	release
+[sensor:413] lean rigth arm robot	right
+[cmd:496] secure target channelA modeX	grab
+quickly modeX then lock on object and keep stable	grab
+execute lower unit :: immediately immediately :: speed=46	down
+put object down ; id=721 speed=38	release
+execute descend :: robot please :: sensor=71	down
+modeX please then steer right side and keep stable	right
+execute lean right :: please please :: sensor=33	right
+lean right ; temp=587 speed=93	right
+upward adjust ; sensor=953 temp=54	up
+move a bit higher ; seq=277 job=82	up
+steer right side ## safety robot ## sensor=957	right
+downward adjust ## safety please ## speed=801	down
+secure target but ignore 'move up' ## safety arm ## temp=837	grab
+[id:131] ascend channelA immediately	up
+raise unit ## kindly arm ## task=273	up
+move a bit higher ; id=274 seq=60	up
+please channelA then nudge left but ignore 'move up' and keep stable	left
+[temp:873] arm to lower position but ignore 'release object' immediately safety	down
+arm to upper position ; temp=487 job=70	up
+execute rotate left :: safety safety :: id=44	left
+offset leftward ## please arm ## temp=112	left
+execute free target :: please channelA :: cmd=66	release
+[task:703] secure target robot channelA	grab
+[speed:777] arm to upper position kindly robot	up
+[job:664] upward adjust kindly quickly	up
+[id:121] catch component but ignore 'release object' now quickly	grab
+channelA please then rotate right and keep stable	right
+[id:168] arm to upper position but ignore 'move down' safety arm	up
+safety please then grasp firmly and keep stable	grab
+ascend ## arm arm ## sensor=429	up
+steer right side ## robot robot ## cmd=288	right
+grasp firmly but ignore 'move left' ; sensor=838 seq=91	grab
+execute downward adjust :: arm please :: seq=26	down
+safety please then secure target and keep stable	grab
+release gently but ignore 'move down' ; id=941 job=78	release
+execute loosen gripper :: kindly robot :: seq=55	release
+execute mov a bit lower :: modeX robot :: job=45	down
+lower unit ## quickly robot ## seq=791	down
+[cmd:125] free target channelA now	release
+put object down ; speed=715 id=91	release
+lean left ## immediately please ## temp=417	left
+lock on object ; id=863 job=96	grab
+arm safety then offset rightward and keep stable	right
+arm now then secure target but ignore 'move left' and keep stable	grab
+execute nudge left :: immediately robot :: job=34	left
+[sensor:663] release gently immediately immediately	release
+kindly immediately then grasp firmly but ignore 'release object' and keep stable	grab
+[temp:682] offset rightward immediately robot	right
+[job:244] loosen gripper but ignore 'move up' robot robot	release
+execute offset leftward but ignore 'release object' :: kindly arm :: temp=88	left
+grasp firmly ## modeX robot ## job=807	grab
+[seq:100] free target kindly now	release
+[seq:502] raise unit safety arm	up
+[speed:831] offset leftward safety arm	left
+descend ; sensor=888 sensor=37	down
+arm arm then lock on object and keep stable	grab
+execute raise unit :: please robot :: seq=54	up
+execute nudge left but ignore 'release object' :: please now :: id=42	left
+modeX arm then catch component and keep stable	grab
+[task:141] free target quickly arm	release
+catch component but ignore 'move left' ; id=819 speed=94	grab
+[id:265] secure target channelA kindly	grab
+steer left side ## kindly robot ## sensor=273	left
+[job:523] rotate right quickly now	right
+offset rightward but ignore 'grab object' ; cmd=144 sensor=32	right
+[job:545] rotate left arm robot	left
+[id:813] arm to lower position quickly please	down
+[job:599] nudge left modeX quickly	left
+nudge right ## safety channelA ## temp=822	right
+execute lean right :: now quickly :: speed=66	right
+[job:116] tighten gripper kindly robot	grab
+offset leftward ## arm channelA ## speed=250	left
+secure target ## immediately modeX ## sensor=276	grab
+execute put object down but ignore 'move left' :: safety immediately :: seq=72	release
+now quickly then lean right and keep stable	right
+[seq:738] move a bit lower immediately modeX	down
+rotate left ## immediately arm ## id=140	left
+lean right ## safety kindly ## id=329	right
+execute rotate right but ignore 'grab object' :: please kindly :: task=38	right
+modeX please then release gently and keep stable	release
+free target but ignore 'grab object' ## immediately now ## id=790	release
+upward adjust but ignore 'move right' ; task=616 cmd=84	up
+immediately safety then tighten gripper but ignore 'move up' and keep stable	grab
+modeX modeX then steer left side and keep stable	left
+execute rotate lft :: channelA robot :: speed=59	left
+lock on object ; sensor=368 id=94	grab
+execute put object down :: channelA robot :: cmd=66	release
+execute lock on object :: kindly arm :: temp=71	grab
+catch component ## robot robot ## speed=774	grab
+catch component but ignore 'move up' ; sensor=795 cmd=72	grab
+move a bit higher ; sensor=588 cmd=62	up
+[temp:203] secure target arm now	grab
+lean rigth but ignore 'mov down' ; temp=856 temp=48	right
+lean right ## channelA robot ## job=479	right
+execute move a bit higher :: quickly immediately :: temp=37	up
+rotate left but ignore 'move down' ## please safety ## temp=826	left
+[job:107] lower unit safety modeX	down
+execute unlock gripper but ignore 'grab object' :: robot now :: task=26	release
+tighten gripper ## immediately modeX ## id=800	grab
+execute secure target :: safety please :: seq=86	grab
+execute ascend :: kindly safety :: task=82	up
+nudge right ; cmd=289 task=77	right
+execute rotate left :: quickly safety :: speed=28	left
+quickly channelA then grasp firmly and keep stable	grab
+lean right ## please please ## seq=444	right
+lean rigth ; sensor=355 job=36	right
+move a bit lower ## safety robot ## id=863	down
+now channelA then arm to upper position but ignore 'move down' and keep stable	up
+lean left ## safety channelA ## cmd=840	left
+offset leftward but ignore 'move right' ; sensor=930 task=45	left
+kindly arm then grasp firmly and keep stable	grab
+tighten gripper but ignore 'mov down' ; job=983 sensor=49	grab
+upward adjust but ignore 'move right' ; seq=147 id=57	up
+channelA now then put object down but ignore 'move right' and keep stable	release
+offset leftward but ignore 'grab object' ## modeX arm ## seq=523	left
+offset rightward ## arm now ## speed=143	right
+[cmd:849] unlock gripper but ignore 'grab object' immediately arm	release
+robot arm then ascend and keep stable	up
+rotate right but ignore 'release object' ; cmd=636 seq=34	right
+modeX please then steer left side and keep stable	left
+quickly quickly then lock on object but ignore 'move left' and keep stable	grab
+execute rotate right but ignore 'release object' :: channelA robot :: speed=77	right
+arm immediately then unlock gripper and keep stable	release
+arm to lower position ; id=202 speed=35	down
+[cmd:927] steer left side but ignore 'move right' kindly modeX	left
+free target but ignore 'mov down' ## now channelA ## cmd=404	release
+execute upward adjust :: robot safety :: task=36	up
+arm channelA then lean left and keep stable	left
+lean left ## now quickly ## id=560	left
+[job:365] release gently kindly robot	release
+[speed:390] free target safety channelA	release
+execute secure target but ignore 'move right' :: channelA please :: id=47	grab
+please safety then unlock gripper but ignore 'mov rigth' and keep stable	release
+move a bit higher ## modeX modeX ## job=468	up
+execute put object down :: modeX kindly :: temp=76	release
+downward adjust ; sensor=105 temp=50	down
+unlock gripper ## channelA modeX ## seq=641	release
+unlock gripper ## now robot ## seq=236	release
+execute downward adjust :: robot please :: sensor=25	down
+execute lean rigth but ignore 'relase object' :: immediately quickly :: seq=84	right
+steer left side ## channelA quickly ## task=252	left
+execute offset leftward but ignore 'move down' :: please kindly :: task=74	left

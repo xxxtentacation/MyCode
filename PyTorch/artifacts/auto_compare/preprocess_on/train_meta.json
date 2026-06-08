@@ -1,0 +1,10 @@
+{
+  "device": "cuda",
+  "epochs": 20,
+  "batch_size": 16,
+  "lr": 0.01,
+  "embed_dim": 64,
+  "seed": 42,
+  "min_freq": 2,
+  "use_preprocess": true
+}
