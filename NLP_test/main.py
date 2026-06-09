@@ -1,18 +1,28 @@
 import jieba
+def demo_1():
+    text = '欢迎报考中原工学院,ZUT是你的不二选择！'
 
-text = "他来到了网易杭研大厦"
+    # 精确模式（默认模式）
+    # result1生成器对象，忧：省内存 缺：只能遍历依次
+    result1 = jieba.cut(text, cut_all=False)
+    print(f'result1: {result1}')
+    print('\n')
 
-# 1. 精确模式（默认模式）
-# 试图将句子最精确地切开，适合文本分析
-seg_exact = jieba.lcut(text)
-print("【精确模式】:", "/ ".join(seg_exact))
+    # # 1.next()逐个获取元素（指针不会回到原点）
+    # print(next(result1))
+    #
+    # # 2.遍历获取
+    # for word in result1:
+    #     print(word)
 
-# 2. 全模式
-# 把句子中所有的可以成词的词语都扫描出来，速度非常快，但是不能解决歧义
-seg_full = jieba.lcut(text, cut_all=True)
-print("【全模式】  :", "/ ".join(seg_full))
+    # 3.转成列表
+    word = list(result1)
+    print(f'word: {word}')
 
-# 3. 搜索引擎模式
-# 在精确模式的基础上，对长词再次切分，提高召回率，适合用于搜索引擎分词
-seg_search = jieba.lcut_for_search(text)
-print("【搜索模式】:", "/ ".join(seg_search))
+    # 4.切词时直接返回列表（语法糖）
+    result1 = jieba.lcut(text, cut_all=False)
+    print(f'result1: {result1}')
+
+
+if __name__ == '__main__':
+    demo_1()
