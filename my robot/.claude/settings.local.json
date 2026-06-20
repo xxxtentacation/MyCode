@@ -1,7 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "PowerShell(try { where.exe uv 2>&1 } catch {}; try { where.exe conda 2>&1 } catch {}; ls \"D:\\\\code\\\\WorkSpace\\\\PY\\\\my robot\\\\.venv\" -ErrorAction SilentlyContinue; ls \"D:\\\\code\\\\WorkSpace\\\\PY\\\\.venv\" -ErrorAction SilentlyContinue; $env:PATH -split ';' | Select-String -Pattern 'ython' | ForEach-Object { $_.Line })"
-    ]
-  }
-}

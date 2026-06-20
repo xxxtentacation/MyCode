@@ -13,6 +13,9 @@ venv/
 env/
 ENV/
 
+#agent
+.claude/
+
 # Virtual Environment
 .Python
 pip-log.txt
