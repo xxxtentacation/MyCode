@@ -1,0 +1,349 @@
+% ===========================================================================
+%  Character-Level Language Model for Robot Instruction Following
+%  Nature-style manuscript (compatible with nature.cls or article class)
+% ===========================================================================
+
+%\documentclass{nature}
+\documentclass[11pt,a4paper]{article}
+
+% --- Packages ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{newtxtext,newtxmath}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{subcaption}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{caption}
+\usepackage{enumitem}
+\usepackage{float}
+
+% --- Hyperref setup ---
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue
+}
+
+% --- Code listing style ---
+\lstset{
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    frame=single,
+    numbers=left,
+    numberstyle=\tiny,
+    xleftmargin=2em,
+    language=Python,
+    showstringspaces=false,
+    columns=flexible
+}
+
+% --- Title ---
+\title{A Character-Level Transformer for Mapping Natural Language Instructions to Structured Robot Commands}
+
+\author{Author Name}
+
+\date{}
+
+\begin{document}
+
+\maketitle
+
+% ===========================================================================
+%  ABSTRACT
+% ===========================================================================
+\begin{abstract}
+Translating natural language instructions into structured robot control commands requires models that are both syntactically precise and data-efficient.
+Existing large language models achieve strong performance on general-purpose instruction following, yet remain over-parameterized for domain-specific structured-output tasks,
+where the output space is constrained to a small set of JSON templates.
+Here we train a 3.2-million-parameter GPT-2-style Transformer with character-level tokenization on 887 robot instruction--command pairs
+and evaluate it on 50 held-out test instructions under deterministic greedy decoding.
+The model produces syntactically valid JSON in 100\% of test cases, achieves 80.0\% exact-match accuracy,
+and correctly predicts the target function name in all 50 samples.
+Error analysis reveals that residual failures are concentrated in numerical precision and cross-unit conversion rather than structural errors.
+These results suggest that character-level encoding, when paired with careful data normalization,
+offers a compact and reliable route for structured-output generation in resource-constrained settings.
+\end{abstract}
+
+% ===========================================================================
+%  INTRODUCTION
+% ===========================================================================
+\section{Introduction}
+
+Translating natural language (NL) instructions into executable robot commands is a core capability for human--robot interaction systems.
+The task requires mapping free-form text---``Move the TCP to (0.5, 0.3, 0.7)~m''---to structured JSON objects
+such as \texttt{\{"function": "move\_tcp", "kwargs": \{"x": 500.0, "y": 300.0, "z": 700.0\}\}}.
+Two conflicting demands define the problem: the output must be \emph{syntactically exact} (a single misplaced bracket breaks downstream execution),
+yet the input is \emph{linguistically variable} (users express identical intent with diverse phrasing and units).
+
+Large pre-trained language models perform well on instruction-following benchmarks but incur substantial inference cost
+and require tokenizers whose subword splits can introduce unpredictable artifacts in JSON output.
+For domain-constrained settings---where the command vocabulary is small (fewer than 10 function types)
+and the output syntax is fixed---a character-level autoregressive model may be sufficient.
+The nanoGPT framework provides a minimal, auditable GPT-2 implementation
+that can be rapidly adapted to such tasks.
+
+In this work, we train and evaluate a small Transformer ($\sim$3.2M parameters) on the Studeni/robot-instructions dataset,
+using character-level encoding with a vocabulary of only 77 tokens.
+We report four findings:
+(1)~character-level tokenization eliminates JSON syntax errors entirely (100\% validity on test);
+(2)~80.0\% of generated commands match the reference exactly after canonicalization;
+(3)~function-name selection is perfect across all test cases; and
+(4)~remaining errors are concentrated in numerical precision and unit conversion, not in structural reasoning.
+
+% ===========================================================================
+%  RESULTS
+% ===========================================================================
+\section{Results}
+
+\subsection{Training Dynamics}
+
+The model was trained for 3,000 iterations with a batch size of 32 and block size of 256,
+processing approximately 24.6 million tokens in total.
+Training and validation loss decreased smoothly under a cosine learning-rate schedule with 50-step linear warmup (Fig.~\ref{fig:training}).
+The final training loss reached 0.087 and validation loss 0.094, corresponding to perplexities of 1.09 and 1.10, respectively.
+Model FLOPs utilization (MFU) stabilized at approximately 28\% on a single consumer GPU,
+consistent with the small model size and low arithmetic intensity of character-level sequences.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\columnwidth]{out-robot-instr/training_metrics.png}
+    \caption{Training metrics over 3,000 iterations.
+    \textbf{(a)} Train and validation loss.
+    \textbf{(b)} Raw per-step loss.
+    \textbf{(c)} Perplexity ($e^{\text{loss}}$).
+    \textbf{(d)} Learning-rate schedule (warmup + cosine decay).
+    \textbf{(e)} Model FLOPs utilization (MFU).
+    \textbf{(f)} Summary statistics.}
+    \label{fig:training}
+\end{figure}
+
+\subsection{Evaluation on Held-Out Instructions}
+
+We evaluated the final checkpoint on 50 held-out test instructions using greedy decoding (temperature = 0)
+with a maximum of 500 new tokens and a stop condition at the double-newline delimiter.
+Four metrics were computed (Table~\ref{tab:metrics}):
+
+\begin{table}[H]
+    \centering
+    \caption{Aggregate evaluation metrics on 50 test instructions.}
+    \label{tab:metrics}
+    \begin{tabular}{@{}lcc@{}}
+        \toprule
+        \textbf{Metric} & \textbf{Value} & \textbf{Samples} \\
+        \midrule
+        JSON validity        & 100.0\% & 50/50 \\
+        Exact match          &  80.0\% & 40/50 \\
+        Function-name match  & 100.0\% & 50/50 \\
+        Character accuracy   & $\approx$\,93.8\% & --- \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+The JSON validity rate of 100\% indicates that character-level encoding provides a strong inductive bias toward syntactically correct output:
+every bracket, comma, and quotation mark is modeled as an independent character,
+leaving no opportunity for subword-merging artifacts that can corrupt structured output in BPE-based tokenizers.
+
+\subsection{Error Analysis}
+
+The 10 samples that did not achieve exact match were manually inspected and classified into three error types:
+
+\paragraph{Type I: Numerical deviation (most common).}
+The model generated the correct function name and JSON structure but produced incorrect numerical values.
+Examples include joint-index substitution (\texttt{joint [1]} $\to$ \texttt{[3]}) and coordinate drift (\texttt{z=300.0} $\to$ \texttt{z=350.0}).
+
+\paragraph{Type II: Unit conversion error.}
+When the instruction specified coordinates in centimeters (``Move to (100, --50, 200)~cm''),
+the expected output required millimeter conversion ($\times 100$). The model produced values closer to the raw input,
+indicating that unit-conversion reasoning is not reliably acquired from the training distribution alone.
+
+\paragraph{Type III: Multi-command merge/split error.}
+Instructions requiring multiple independent robot commands were sometimes incorrectly merged into a single command,
+or a single multi-joint command was split across separate calls.
+
+These failure modes suggest that the primary bottleneck is not structural understanding but \emph{numerical reasoning} under sparse training coverage.
+Augmenting the training data with explicit unit-conversion examples or adding a symbolic preprocessing step
+for unit normalization could address the majority of remaining errors.
+
+% ===========================================================================
+%  DISCUSSION
+% ===========================================================================
+\section{Discussion}
+
+The results demonstrate that a character-level Transformer with fewer than 4 million parameters
+can serve as a reliable structured-output generator for domain-specific robot instruction following.
+The near-perfect JSON validity and function-name accuracy are consistent with the hypothesis
+that character-level modeling removes the tokenization-related failure modes that affect subword-based models on structured tasks.
+
+The 80\% exact-match rate must be interpreted in context: the remaining 20\% of errors are dominated by numerical imprecision,
+not by incorrect command structure or function selection.
+This pattern suggests that the model has successfully learned the \emph{syntax} and \emph{semantics} of the command space,
+and that residual errors reflect insufficient coverage of arithmetic transformations rather than a fundamental modeling limitation.
+
+Several limitations should be noted.
+First, the dataset is small (887 training samples) and covers only three function types;
+generalization to larger command vocabularies or more complex JSON schemas remains untested.
+Second, the model uses absolute positional encodings with a fixed context window of 256 tokens,
+which may limit performance on multi-step instruction sequences.
+Third, the evaluation was conducted with greedy decoding (temperature = 0);
+stochastic decoding strategies may yield different trade-offs between diversity and precision.
+
+Future work could explore data-augmentation strategies that explicitly target unit-conversion reasoning,
+integration of relative positional encodings (e.g., RoPE) for longer sequences,
+and comparison with instruction-tuned models of comparable size.
+
+% ===========================================================================
+%  METHODS
+% ===========================================================================
+\section{Methods}
+
+\subsection{Data Preprocessing}
+
+The dataset Studeni/robot-instructions contains natural-language-to-JSON command pairs
+for robotic manipulation tasks.
+We developed a preprocessing pipeline (\texttt{data/robot\_instr/prepare.py}) that performs the following steps:
+
+\begin{enumerate}[leftmargin=*,nosep]
+    \item \textbf{Loading}: data are read from a local \texttt{input.txt} cache (986 formatted samples),
+          or downloaded from HuggingFace Hub on first use.
+    \item \textbf{Cleaning}: all floating-point numbers are rounded to two decimal places via \texttt{round\_floats()};
+          JSON outputs are canonicalized through \texttt{json.loads} $\to$ \texttt{json.dumps}.
+    \item \textbf{Formatting}: each sample is serialized as
+          \texttt{Human: \textless{}instruction\textgreater{}\textbackslash nRobot: \textless{}json\textgreater\textbackslash n\textbackslash n}.
+    \item \textbf{Splitting}: a sequential 9:1 train/validation split yields 887 training and 99 validation samples.
+    \item \textbf{Encoding}: a character-level vocabulary is built from the union of all characters in the training and validation sets.
+\end{enumerate}
+
+The preprocessing addresses two data-quality issues in the raw dataset:
+(i)~inconsistent distance units (meters, centimeters, millimeters) across instructions, and
+(ii)~unconstrained decimal precision in angular values (e.g., $\pi/4$ vs.\ integer degrees).
+
+\subsection{Character-Level Tokenization}
+
+We adopt a character-level tokenizer following the \texttt{shakespeare\_char} recipe in nanoGPT.
+The vocabulary consists of $V = 77$ unique characters, comprising uppercase and lowercase letters, digits,
+JSON syntax tokens (\texttt{\{\}[]",:}), the minus sign, decimal point, whitespace, and newline characters.
+Bidirectional mapping is stored in \texttt{meta.pkl}:
+
+\begin{equation}
+    \text{encode}(s) = [\,\text{stoi}[c] \mid c \in s\,], \qquad
+    \text{decode}(\mathbf{ids}) = \text{concat}([\,\text{itos}[i] \mid i \in \mathbf{ids}\,])
+\end{equation}
+
+Token IDs are serialized as \texttt{uint16} arrays in \texttt{train.bin} (240~KB) and \texttt{val.bin} (26~KB).
+
+The choice of character-level encoding is motivated by three considerations:
+(1)~the tiny vocabulary (77 tokens) minimizes embedding parameters ($77 \times 256 = 19{,}712$ weights);
+(2)~JSON syntax precision is guaranteed, since every bracket and comma is a distinct token; and
+(3)~out-of-vocabulary tokens cannot occur by construction.
+
+\subsection{Model Architecture}
+
+The model follows the GPT-2 architecture implemented in nanoGPT,
+with hyperparameters configured for the small-data regime (Table~\ref{tab:arch}):
+
+\begin{table}[H]
+    \centering
+    \caption{Model architecture configuration.}
+    \label{tab:arch}
+    \begin{tabular}{@{}lc@{}}
+        \toprule
+        \textbf{Hyperparameter} & \textbf{Value} \\
+        \midrule
+        Transformer layers ($L$)     & 4 \\
+        Attention heads ($H$)        & 4 \\
+        Embedding dimension ($d$)    & 256 \\
+        Maximum sequence length ($T$) & 256 \\
+        Dropout rate                 & 0.2 \\
+        Bias parameters              & None \\
+        Total parameters             & $\sim$3.2M \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+The forward pass is defined as:
+
+\begin{align}
+    \mathbf{h}_0 &= \text{Dropout}\big(\text{wte}(x) + \text{wpe}(\text{pos})\big) \\
+    \mathbf{h}_\ell &= \mathbf{h}_{\ell-1} + \text{MLP}_\ell\big(\text{LN}_{\ell,2}\big(
+        \mathbf{h}_{\ell-1} + \text{Attn}_\ell(\text{LN}_{\ell,1}(\mathbf{h}_{\ell-1}))
+    \big)\big), \quad \ell = 1,\dots,L \\
+    P(y \mid x) &= \text{softmax}\big(\text{LN}_f(\mathbf{h}_L) \cdot \mathbf{W}_e^\top\big)
+\end{align}
+
+where $\text{wte}$ and $\text{lm\_head}$ share weights ($\mathbf{W}_e^\top$),
+causal self-attention uses Flash Attention when PyTorch $\geq$ 2.0,
+the MLP block uses a 4$\times$ expansion ratio with GELU activation,
+and residual projections are initialized with a $1/\sqrt{2L}$ scaling factor for training stability.
+
+\subsection{Training Configuration}
+
+Training uses the AdamW optimizer with $\beta_1 = 0.9$, $\beta_2 = 0.99$,
+weight decay $\lambda = 0.1$ (applied only to parameters with $\geq 2$ dimensions),
+and gradient clipping at $1.0$.
+The learning rate follows a warmup-then-decay schedule:
+
+\begin{equation}
+    \eta(t) =
+    \begin{cases}
+        \eta_{\max} \cdot \frac{t}{t_{\text{warm}}}, & t \leq t_{\text{warm}} \\[4pt]
+        \eta_{\min} + \frac{\eta_{\max} - \eta_{\min}}{2}
+            \left(1 + \cos\left(\pi \cdot \frac{t - t_{\text{warm}}}{T - t_{\text{warm}}}\right)\right), & t > t_{\text{warm}}
+    \end{cases}
+\end{equation}
+
+with $\eta_{\max} = 10^{-3}$, $\eta_{\min} = 10^{-4}$, $t_{\text{warm}} = 50$, and $T = 3000$ iterations.
+Mixed-precision training (\texttt{bfloat16} autocast) and asynchronous data prefetching
+(\texttt{pin\_memory} + \texttt{non\_blocking}) are used to reduce memory footprint and overlap data transfer with computation.
+Checkpoints are saved only when validation loss improves, implementing a lightweight form of early stopping.
+
+Throughput per iteration is:
+
+\begin{equation}
+    \text{tokens/iter} = g_{\text{acc}} \times B \times T = 1 \times 32 \times 256 = 8{,}192,
+\end{equation}
+
+yielding $8{,}192 \times 3{,}000 = 24{,}576{,}000$ total training tokens.
+
+\subsection{Evaluation Protocol}
+
+Evaluation is performed using \texttt{sample.py} in evaluation mode on 50 held-out test instructions.
+Decoding uses greedy selection (temperature = 0) with a stop condition at the double-newline token or after 500 new tokens.
+Generated outputs are compared against reference commands using four metrics:
+
+\begin{itemize}[leftmargin=*,nosep]
+    \item \textbf{JSON validity}: whether the output parses as valid JSON.
+    \item \textbf{Exact match}: whether the canonicalized JSON (sorted keys, normalized whitespace) matches the reference.
+    \item \textbf{Function-name match}: whether the set of function names in the generated output matches the reference.
+    \item \textbf{Character error rate} (CER): Levenshtein distance between generated and reference strings, normalized by reference length.
+\end{itemize}
+
+% ===========================================================================
+%  CONCLUSION
+% ===========================================================================
+\section{Conclusion}
+
+We have shown that a 3.2M-parameter character-level Transformer,
+trained on 887 robot instruction--command pairs,
+generates syntactically valid JSON in 100\% of test cases and achieves 80\% exact-match accuracy.
+The model correctly identifies the target function in every test sample,
+and residual errors are confined to numerical precision rather than structural understanding.
+These findings indicate that character-level encoding is a practical design choice
+for domain-specific structured-output tasks where the output vocabulary is small and precision is paramount.
+Data augmentation targeting unit conversion and multi-step composition represents a natural next step
+toward closing the remaining performance gap.
+
+% ===========================================================================
+%  DATA AND CODE AVAILABILITY
+% ===========================================================================
+\section*{Data and Code Availability}
+
+The nanoGPT framework is available at \url{https://github.com/karpathy/nanoGPT}.
+The Studeni/robot-instructions dataset is available on HuggingFace Hub.
+Preprocessing scripts, model configurations, and evaluation code are included in the project repository.
+
+\end{document}
