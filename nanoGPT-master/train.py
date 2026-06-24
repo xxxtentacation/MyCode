@@ -61,7 +61,7 @@ dropout = 0.2
 bias = False # do we use bias inside LayerNorm and Linear layers?
 # adamw optimizer
 learning_rate = 1e-3 # with baby networks can afford to go a bit higher
-max_iters = 1600
+max_iters = 800
 weight_decay = 1e-1
 beta1 = 0.9
 beta2 = 0.99 # make a bit bigger because number of tokens per iter is small
